@@ -1,0 +1,1519 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Есет Көтібарұлы көтерілісі</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+/* Layout: dark steppe-dawn hero + light/dark reading panels; sticky tab bar; one gold accent on a sky-blue base (colors of the Kazakh flag) */
+:root{
+  --bg:#eef1ee; --surface:#ffffff; --surface2:#e2e9e6; --ink:#13222b; --muted:#4a5d66; --line:#c6d1cd;
+  --sky:#0a6a8a; --gold:#8a6406; --gold-fill:#e0ac2b; --on-gold:#1b1405;
+  --hero:#0d2033; --hero-ink:#f0f4f1; --hero-muted:#a9bcc6; --good:#1f7a4d; --bad:#b0392b;
+  --serif:"PT Serif",Georgia,"Times New Roman",serif; --sans:"PT Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --narrow:"PT Sans Narrow","PT Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0b1620; --surface:#122230; --surface2:#1a2e3d; --ink:#e7eeea; --muted:#9fb2b9; --line:#264152;
+  --sky:#5ec3da; --gold:#e6bb4c; --gold-fill:#e6bb4c; --on-gold:#1b1405; --hero:#0a1a2a; --good:#58c58f; --bad:#ec8576; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0b1620; --surface:#122230; --surface2:#1a2e3d; --ink:#e7eeea; --muted:#9fb2b9; --line:#264152;
+  --sky:#5ec3da; --gold:#e6bb4c; --gold-fill:#e6bb4c; --on-gold:#1b1405; --hero:#0a1a2a; --good:#58c58f; --bad:#ec8576; color-scheme:dark;}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-text-size-adjust:100%}
+body.lock{overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--hero)}
+h1,h2,h3{font-family:var(--serif);line-height:1.2;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:var(--sky)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold-fill);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* intro */
+#intro{position:fixed;inset:0;z-index:100;background:#08111f;transition:opacity .7s ease}
+#intro.out{opacity:0;pointer-events:none}
+#introCv{position:absolute;inset:0;width:100%;height:100%;display:block}
+.intro-title{position:absolute;left:0;right:0;top:max(9vh,calc(env(safe-area-inset-top,0px) + 48px));text-align:center;color:#fff;padding:0 16px;text-shadow:0 2px 18px rgba(0,0,0,.55);animation:fadeUp 1.6s ease both}
+.intro-title small{display:block;font:700 13px/1 var(--narrow);letter-spacing:.32em;text-transform:uppercase;color:#f3cf78;margin-bottom:14px}
+.intro-title b{display:block;font:700 clamp(40px,9vw,92px)/1 var(--serif);letter-spacing:.02em}
+.intro-title span{display:block;margin-top:12px;font:400 clamp(15px,2.2vw,20px)/1.3 var(--sans);color:#e8eef0}
+#introCap{position:absolute;left:0;right:0;bottom:max(9vh,calc(env(safe-area-inset-bottom,0px) + 70px));text-align:center;color:#fff;font:italic 400 clamp(17px,2.6vw,26px)/1.4 var(--serif);padding:0 24px;text-shadow:0 2px 14px rgba(0,0,0,.7);transition:opacity .6s ease;min-height:2.8em}
+#introCap.hide{opacity:0}
+#skipIntro{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));background:rgba(8,17,31,.6);border:1px solid rgba(255,255,255,.45);color:#fff;border-radius:999px;padding:9px 18px;font:700 14px var(--narrow);letter-spacing:.06em;text-transform:uppercase}
+#skipIntro:hover{background:rgba(255,255,255,.18)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--hero);color:var(--hero-ink);border-bottom:2px solid var(--gold-fill)}
+.top .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding-block:8px}
+.brand{font:700 18px var(--serif);white-space:nowrap}
+.brand i{color:var(--gold-fill);font-style:normal}
+nav{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;justify-content:flex-end;min-width:max-content}
+nav button{background:none;border:0;border-bottom:3px solid transparent;color:var(--hero-muted);padding:8px 12px;font:700 15px var(--narrow);letter-spacing:.05em;text-transform:uppercase}
+nav button:hover{color:var(--hero-ink)}
+nav button[aria-selected="true"]{color:#fff;border-bottom-color:var(--gold-fill)}
+
+/* hero */
+.hero{background:var(--hero);color:var(--hero-ink);padding-block:56px 0;position:relative;overflow:hidden}
+.eyebrow{font:700 13px/1.3 var(--narrow);letter-spacing:.18em;text-transform:uppercase;color:#f3cf78}
+.hero h1{font-size:clamp(26px,4.6vw,46px);margin:14px 0 18px;max-width:22em;font-weight:700}
+.hero .by{color:var(--hero-muted);max-width:40em}
+.hero .by b{color:var(--hero-ink)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 44px}
+.btn{border:2px solid var(--gold-fill);background:var(--gold-fill);color:var(--on-gold);padding:10px 20px;border-radius:3px;font:700 15px var(--narrow);letter-spacing:.06em;text-transform:uppercase}
+.btn.alt{background:transparent;color:var(--hero-ink);border-color:rgba(255,255,255,.4)}
+.btn:hover{filter:brightness(1.08)}
+.orn{display:block;width:100%;height:30px;color:var(--gold-fill);opacity:.8}
+.hero-hills{position:absolute;right:0;bottom:30px;width:min(520px,70%);opacity:.22;pointer-events:none}
+
+/* panels */
+.panel{padding-block:40px 64px}
+.sec{margin-top:48px}
+.sec:first-child{margin-top:0}
+.sec>h2{font-size:clamp(22px,3vw,30px);margin-bottom:6px}
+.sec>.lead{color:var(--muted);max-width:44em;margin-bottom:20px}
+.kicker{font:700 12px/1 var(--narrow);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:block}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px;min-width:0}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+.chip{display:inline-block;font:700 12px/1 var(--narrow);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:2px;background:var(--surface2);color:var(--ink);border:1px solid var(--line)}
+.src{display:inline-block;font:700 12px/1.2 var(--narrow);color:var(--sky);margin-top:10px;letter-spacing:.03em}
+.cite{color:var(--sky);white-space:nowrap}
+.article{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--gold-fill);padding:22px 24px;border-radius:4px}
+.article p{max-width:46em}
+.article p+p{margin-top:14px}
+.concepts{display:grid;gap:0;border:1px solid var(--line);background:var(--surface);border-radius:4px}
+.concepts div{display:grid;grid-template-columns:minmax(120px,200px) 1fr;gap:16px;padding:14px 18px;border-top:1px solid var(--line)}
+.concepts div:first-child{border-top:0}
+.concepts dt{font:700 13px/1.4 var(--narrow);letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.concepts dd{margin:0;min-width:0}
+
+/* timeline */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.fbtn{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 15px;font:700 14px var(--narrow);letter-spacing:.04em}
+.fbtn[aria-pressed="true"]{background:var(--sky);color:var(--bg);border-color:var(--sky)}
+.tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--line);margin-left:6px}
+.tl li{position:relative;padding:0 0 24px 26px;display:grid;grid-template-columns:130px 1fr;gap:6px 18px}
+.tl li::before{content:"";position:absolute;left:-8px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--sky)}
+.tl li[data-t="res"]::before{border-color:var(--gold-fill)}
+.tl li[data-t="col"]::before{border-color:var(--bad)}
+.tl li[data-t="life"]::before{border-color:var(--muted)}
+.tl .yr{font:700 20px/1.2 var(--serif)}
+.tl .yr small{display:block;font:700 12px var(--narrow);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.tl h3{font-size:18px;margin-bottom:4px}
+.tl p{color:var(--muted);font-size:15px}
+.tl li[hidden]{display:none}
+
+.two{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.two .card ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
+.two .card li+li{margin-top:6px}
+.flow{display:grid;gap:10px;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch}
+.flow .node{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--sky);border-radius:4px;padding:14px;min-width:0}
+.flow .node:nth-child(3){border-top-color:var(--gold-fill)}
+.flow .node:nth-child(5){border-top-color:var(--bad)}
+.flow .node h3{font-size:16px;margin-bottom:6px}
+.flow .node ul{margin:0;padding-left:18px;font-size:14px;color:var(--muted)}
+.flow .arr{display:flex;align-items:center;color:var(--gold);font:700 28px var(--serif)}
+.note{border:1px dashed var(--line);border-radius:4px;padding:14px 16px;color:var(--muted);font-size:15px;background:var(--surface)}
+
+/* sources */
+.srcs{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.scard{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.scard[hidden]{display:none}
+.scard h3{font-size:17px}
+.scard .meta{display:flex;gap:8px;flex-wrap:wrap}
+.scard p{font-size:14.5px;color:var(--muted)}
+.scard .apa{font-size:13.5px;color:var(--ink);background:var(--surface2);padding:10px 12px;border-radius:3px;overflow-wrap:anywhere}
+.scard a{font-weight:700;font-size:14px;overflow-wrap:anywhere}
+.rel{font:700 12px var(--narrow);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:2px;border:1px solid currentColor}
+.rel.h{color:var(--good)}.rel.m{color:var(--gold)}.rel.l{color:var(--bad)}
+.scard.todo{border-style:dashed;background:transparent}
+.opcvl{background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.opcvl .tabs{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.opcvl .tabs button{flex:1 1 90px;background:var(--surface2);border:0;border-right:1px solid var(--line);padding:12px 8px;font:700 14px var(--narrow);letter-spacing:.05em}
+.opcvl .tabs button b{display:block;font:700 22px var(--serif);color:var(--gold)}
+.opcvl .tabs button[aria-selected="true"]{background:var(--surface);box-shadow:inset 0 -3px 0 var(--gold-fill)}
+.opcvl .body{padding:20px 22px;min-height:130px}
+.opcvl .body p{max-width:46em}
+
+/* questions */
+.rq{background:var(--hero);color:var(--hero-ink);border-radius:4px;padding:28px;border-bottom:4px solid var(--gold-fill)}
+.rq h2{font-size:clamp(22px,3.2vw,32px);margin-top:12px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:4px}
+details+details{margin-top:10px}
+summary{cursor:pointer;padding:15px 18px;font:700 17px/1.4 var(--serif);list-style:none;display:flex;gap:14px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary .n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--gold-fill);color:var(--on-gold);display:grid;place-items:center;font:700 15px var(--sans)}
+summary::after{content:"+";margin-left:auto;font:700 22px var(--sans);color:var(--sky);flex:none}
+details[open] summary::after{content:"–"}
+details .ans{padding:0 18px 18px 62px;color:var(--muted);font-size:15.5px}
+details .ans p+p{margin-top:10px}
+details .ans .tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.quiz{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:22px}
+.qprog{font:700 13px var(--narrow);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.quiz h3{font-size:20px;margin:8px 0 16px}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:12px 14px;min-width:0}
+.opt:hover:not(:disabled){border-color:var(--sky)}
+.opt.ok{border-color:var(--good);background:color-mix(in srgb,var(--good) 18%,var(--surface))}
+.opt.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 16%,var(--surface))}
+.fb{margin-top:14px;min-height:1.5em;color:var(--muted);font-size:15px}
+.quiz .btn{margin-top:14px}
+
+/* bibliography */
+.bib{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.bib li{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start}
+.bib .txt{padding-left:28px;text-indent:-28px;overflow-wrap:anywhere;font-family:var(--serif);font-size:15.5px;min-width:0}
+.bib .txt small{display:block;text-indent:0;padding-left:0;margin-top:6px;font:400 13px var(--sans);color:var(--bad)}
+.copy{background:var(--surface2);border:1px solid var(--line);border-radius:3px;padding:6px 12px;font:700 13px var(--narrow);letter-spacing:.05em;text-transform:uppercase}
+.copy.done{background:var(--good);color:var(--bg);border-color:var(--good)}
+
+footer{background:var(--hero);color:var(--hero-muted);padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));font-size:14px}
+footer .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;align-items:center}
+footer button{background:none;border:1px solid rgba(255,255,255,.35);color:var(--hero-ink);border-radius:999px;padding:7px 16px;font:700 13px var(--narrow);letter-spacing:.06em;text-transform:uppercase}
+
+
+.snd{background:none;border:1px solid rgba(255,255,255,.4);color:var(--hero-ink);border-radius:999px;padding:6px 14px;font:700 13px var(--narrow);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.snd[aria-pressed="true"]{background:var(--gold-fill);border-color:var(--gold-fill);color:var(--on-gold)}
+#introSnd{position:absolute;left:max(16px,env(safe-area-inset-left,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));background:rgba(8,17,31,.6);border:1px solid rgba(255,255,255,.45);color:#fff;border-radius:999px;padding:9px 18px;font:700 14px var(--narrow);letter-spacing:.06em;text-transform:uppercase}
+#introSnd[aria-pressed="true"]{background:#e6b23c;border-color:#e6b23c;color:#1b1405}
+.ghud{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:10px}
+.gstat{font:700 15px var(--narrow);letter-spacing:.06em;text-transform:uppercase;display:flex;gap:18px;flex-wrap:wrap}
+.gwrap{position:relative;border:3px solid var(--ink);background:#6bb6e6;overflow:hidden}
+#gcv{display:block;width:100%;image-rendering:pixelated;touch-action:none;cursor:crosshair}
+.gq{position:absolute;inset:0;background:rgba(8,16,26,.78);display:grid;place-items:center;padding:12px;overflow:auto}
+.gq[hidden],.gwin[hidden]{display:none}
+.gq .card{max-width:560px;width:100%}
+.gq h3{font-size:19px;margin:6px 0 14px}
+.gwin{position:absolute;inset:0;background:rgba(8,16,26,.82);display:grid;place-items:center;padding:16px;text-align:center;color:#fff}
+.gwin h3{font-size:clamp(24px,4vw,34px);color:#f3cf78;margin-bottom:10px}
+.gwin p{margin-bottom:16px}
+.hotbar{display:flex;gap:4px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.slot{width:56px;height:56px;border:3px solid var(--line);background:var(--surface2);position:relative;padding:0;display:grid;place-items:center;border-radius:0}
+.slot[aria-pressed="true"]{border-color:var(--gold-fill);outline:2px solid var(--ink)}
+.slot img{width:32px;height:32px;image-rendering:pixelated}
+.slot b{position:absolute;right:3px;bottom:0;font:700 14px var(--sans);color:var(--ink)}
+.gctl{display:flex;justify-content:space-between;gap:12px;margin-top:14px;flex-wrap:wrap;align-items:center}
+.pad{display:flex;gap:8px}
+.pad button{width:68px;height:58px;background:var(--surface);border:2px solid var(--ink);border-radius:4px;font:700 24px var(--sans);touch-action:none;user-select:none}
+.pad button:active{background:var(--gold-fill)}
+.gtools{display:flex;gap:8px;flex-wrap:wrap}
+.gtools .btn{padding:9px 14px}
+.gtools .btn.alt{color:var(--ink);border-color:var(--line)}
+
+.afilm{position:relative;border:3px solid var(--ink);background:#0d2033;line-height:0}
+#acv{display:block;width:100%}
+.acap{background:var(--hero);color:var(--hero-ink);padding:16px 20px;border-bottom:4px solid var(--gold-fill)}
+.acap h3{font-size:20px;color:#f3cf78;margin-bottom:6px}
+.acap p{max-width:48em}
+.acap .src{color:var(--hero-muted);margin-top:8px}
+.actl{display:flex;gap:12px;align-items:center;margin:12px 0}
+.actl input[type=range]{flex:1;min-width:0;accent-color:var(--gold-fill)}
+
+@media (max-width:720px){
+  .flow{grid-template-columns:1fr}
+  .flow .arr{justify-content:center;transform:rotate(90deg);height:24px}
+  .tl li{grid-template-columns:1fr}
+  .concepts div{grid-template-columns:1fr;gap:4px}
+  details .ans{padding-left:18px}
+  .bib li{grid-template-columns:1fr}
+  .hero{padding-top:36px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div id="intro" role="dialog" aria-label="Кіріспе анимация">
+  <canvas id="introCv"></canvas>
+  <div class="intro-title"><small>Жазық дала · XIX ғасыр</small><b>ЕСЕТ БАТЫР</b><span>Ұлт-азаттық көтеріліс · 1847–1858</span></div>
+  <div id="introCap"></div>
+  <button id="introSnd" data-snd type="button" aria-pressed="false">Дыбысты қосу</button>
+  <button id="skipIntro" type="button">Өткізіп жіберу</button>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">Есет батыр <i>·</i> 1847–1858</div>
+    <nav aria-label="Бөлімдер"><ul role="tablist">
+      <li><button role="tab" data-tab="home" aria-selected="true">Басты</button></li>
+      <li><button role="tab" data-tab="topics" aria-selected="false">Рубрикалар</button></li>
+      <li><button role="tab" data-tab="sources" aria-selected="false">Дереккөздер</button></li>
+      <li><button role="tab" data-tab="questions" aria-selected="false">Біздің сұрақтар</button></li>
+      <li><button role="tab" data-tab="anim" aria-selected="false">Көтеріліс</button></li>
+      <li><button role="tab" data-tab="game" aria-selected="false">Ойын</button></li>
+      <li><button role="tab" data-tab="biblio" aria-selected="false">Библиография</button></li>
+    </ul></nav>
+    <button class="snd" id="sndBtn" data-snd type="button" aria-pressed="false">Дыбыс: өшірулі</button>
+  </div>
+</header>
+
+<main>
+<!-- ============ HOME ============ -->
+<section id="p-home" class="panel" style="padding-top:0" role="tabpanel">
+  <div class="hero">
+    <svg class="hero-hills" viewBox="0 0 520 160" aria-hidden="true"><path d="M0 160V110C60 80 120 96 180 84C240 72 300 100 360 78C420 56 470 70 520 52V160Z" fill="#7fb4c8"/><path d="M0 160V132C80 112 150 128 230 116C310 104 390 128 520 98V160Z" fill="#3d7a94"/></svg>
+    <div class="wrap" style="position:relative">
+      <span class="eyebrow">9 «А» · Қоғамдық ғылымдар негіздері · Қорытынды бақылау жұмысы</span>
+      <h1>Есет Көтібарұлы бастаған ұлт-азаттық көтеріліс қазақ қоғамының отаршылдық өзгерістеріне қарсы әрекетіне қаншалықты әсер етті?</h1>
+      <p class="by">Топтық зерттеу жобасы. <b>Муханова Аяулым, Мұрат Жамиля, Елеу Ерелхан.</b> Тақырып: ХІХ ғасырдың екінші жартысындағы ұлт-азаттық көтерілістер.</p>
+      <div class="cta">
+        <button class="btn" data-go="topics" type="button">Рубрикаларға өту</button>
+        <button class="btn alt" data-go="questions" type="button">Біздің сұрақтар</button>
+      </div>
+    </div>
+    <svg class="orn" aria-hidden="true"><defs><pattern id="ram" width="44" height="30" patternUnits="userSpaceOnUse"><path d="M4 22C4 8 22 4 22 15C22 21 15 21 15 16M40 22C40 8 22 4 22 15C22 21 29 21 29 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></pattern></defs><rect width="100%" height="30" fill="url(#ram)"/></svg>
+  </div>
+
+  <div class="wrap">
+    <div class="sec">
+      <span class="kicker">Бас мақала</span>
+      <h2>Зерттеу сұрағына қысқаша жауап</h2>
+      <p class="lead">Мәтіндегі сілтемелер «Дереккөздер» және «Библиография» бөлімдеріндегі еңбектерге сәйкес келеді.</p>
+      <div class="article">
+        <p>Есет Көтібарұлы бастаған көтеріліс қазақ қоғамының отаршылдық өзгерістерге қарсы әрекетін ұйымдасқан қарулы қозғалысқа айналдырды. Қозғалыс 1847–1858 жылдары Кіші жүз аумағында өрбіді <span class="cite">(Wikipedia, б.ж.)</span>. Құрманалин көтерілісті кездейсоқ оқиға емес, жер мәселесі мен отарлық басқаруға, көшпелі өмір салтына түскен қысымға қарсы наразылықтың нәтижесі деп қарастырады <span class="cite">(Құрманалин, 2019)</span>. Арал өңірінде патша әкімшілігінің жоғары салығы да наразылықты күшейтті <span class="cite">(Wikipedia, б.ж.)</span>.</p>
+        <p>Есет 1847 жылы 18 шілдеде 200 казактан құралған жазалау отрядына шабуыл жасады <span class="cite">(Лекция 8, б.ж.)</span>. Ол қарсылықты жеке әрекетпен шектемеді: бұрын Жоламан батырмен бірге Елек бекінісіне шабуыл жасаған <span class="cite">(Kazinform, б.ж.)</span>, ал Жанқожа Нұрмұхамедұлы басқа сардарлардың қолдауын іздеп, Есетке хабар жіберген <span class="cite">(itest.kz, б.ж.)</span>.</p>
+        <p>Көтеріліс басылды <span class="cite">(Wikipedia, б.ж.)</span>. Құрманалин (2024) жеңілістің себебін тараптар арасындағы күш пен әскери техника теңсіздігімен байланыстырады. 1858 жылы Катенин бітім ұсынды <span class="cite">(Лекция 8, б.ж.)</span>, қыркүйекте Есет қаруын тастады <span class="cite">(itest.kz, б.ж.)</span>. Дегенмен оның есімі халық жадында сақталды: 1858 жылғы орыс баспасөзі Есеттің атын Кавказ батыры Шамильдің атымен қатар қойған <span class="cite">(Wikipedia, б.ж.)</span>, ал бүгін Ақтөбеде оған ескерткіш тұр <span class="cite">(Ақтөбе облысы әкімдігі, б.ж.)</span>.</p>
+        <p><b>Қорытынды.</b> Көтеріліс қазақ қоғамының «бейімделу немесе қарсы шығу» таңдауында екінші жолды ұйымдасқан түрде көрсетті. Отаршылдық жүйені тоқтата алмады, бірақ ұлттық ұстаным мен тарихи жадты қалыптастырды.</p>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">Зерттеу негізі</span>
+      <h2>Концепттер мен мәнмәтін</h2>
+      <dl class="concepts" style="margin-top:16px">
+        <div><dt>Юнит</dt><dd>ХІХ ғасырдың ІІ жартысындағы әкімшілік-территориялық өзгерістер</dd></div>
+        <div><dt>Ғаламдық мәнмәтін</dt><dd>Уақыт пен кеңістіктегі бағдар: шекаралар, халықтар, кедергілер мен бейімделулер</dd></div>
+        <div><dt>Негізгі концепция</dt><dd>Өзгеріс</dd></div>
+        <div><dt>Пәндік концепциялар</dt><dd>Себеп-салдарлы байланыс; қарама-қайшылық пен ынтымақтастық</dd></div>
+        <div><dt>Зерттеу идеясы</dt><dd>Өзгерістер салдарынан туындаған мүмкіншіліктер мен кедергілерге қоғам бейімделуі немесе қарсы шығуы мүмкін.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOPICS ============ -->
+<section id="p-topics" class="panel" role="tabpanel" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <span class="kicker">Себеп-салдарлы байланыс</span>
+      <h2>Көтерілістің шығу себептері</h2>
+      <p class="lead">Әр себептің астында ақпарат алынған дереккөз көрсетілген.</p>
+      <div class="grid" id="causes"></div>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">Өзгеріс уақыт ішінде</span>
+      <h2>Хронология</h2>
+      <p class="lead">Оқиғаларды түріне қарай сүзіп көріңіз.</p>
+      <div class="chips" id="tlFilters"></div>
+      <ol class="tl" id="tl"></ol>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">Себеп пен салдар</span>
+      <h2>Өзгерістен қарсылыққа</h2>
+      <div class="flow" style="margin-top:16px">
+        <div class="node"><h3>Отарлық өзгерістер</h3><ul><li>Жер мен көшпелі өмірге қысым</li><li>Отарлық басқару жүйесі</li><li>Салық ауыртпалығы</li><li>Әскери жорықтарға жұмылдыру</li></ul></div>
+        <div class="arr" aria-hidden="true">→</div>
+        <div class="node"><h3>Қарсылық</h3><ul><li>1847: жазалау отрядына шабуыл</li><li>Басқа сардарлармен байланыс</li><li>1854–1858: Арал өңіріндегі наразылық</li></ul></div>
+        <div class="arr" aria-hidden="true">→</div>
+        <div class="node"><h3>Салдар</h3><ul><li>Көтеріліс басылды</li><li>1858: бітім және қару тастау</li><li>Халық жадында батыр бейнесі</li></ul></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">Қарама-қайшылық пен ынтымақтастық</span>
+      <h2>Екі жақты көрініс</h2>
+      <div class="two" style="margin-top:16px">
+        <div class="card"><h3>Қарама-қайшылық</h3><ul>
+          <li>Есет пен жазалау отряды арасындағы қақтығыс (1847)</li>
+          <li>Отарлық әкімшілік пен қазақ рулары мүддесінің қайшылығы</li>
+          <li>1858: Есет ауылдары талқандалып, ол қуғынға ұшырады <span class="cite">(itest.kz, б.ж.)</span></li></ul></div>
+        <div class="card"><h3>Ынтымақтастық</h3><ul>
+          <li>Жоламан батырмен бірге Елек бекінісіне шабуыл (1838) <span class="cite">(Kazinform, б.ж.)</span></li>
+          <li>Жанқожамен байланыс және Арал қазақтарының наразылығы</li>
+          <li>Ұрпақ сабақтастығы: әкесі Сырым Датұлы көтерілісіне қатысқан, ұлы Исатай мен Махамбетті қолдаған <span class="cite">(Kazinform, б.ж.)</span></li></ul></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">Нәтижесі және тарихи маңызы</span>
+      <h2>Көтеріліс не қалдырды?</h2>
+      <div class="grid" style="margin-top:16px">
+        <div class="card"><h3>Нәтиже</h3><p>Көтеріліс басылды. Құрманалин (2024) бұл жеңілістің себебін күш пен әскери техника теңсіздігімен байланыстырады.</p></div>
+        <div class="card"><h3>Замандастар бағасы</h3><p>1858 жылғы орыс баспасөзінде Есеттің есімі Кавказдағы Шамильдің есімімен қатар аталған.</p><span class="src">Wikipedia (б.ж.)</span></div>
+        <div class="card"><h3>Бүгінгі жады</h3><p>Ақтөбеде «Есет Көтібарұлы ат үстінде» ескерткіші орнатылды, көтеріліс тақырыбына арнап республикалық ғылыми конференция өтті.</p><span class="src">Ақтөбе облысы әкімдігі (б.ж.)</span></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">Сыни көзқарас</span>
+      <h2>Дереккөздер бір-біріне қайшы келетін жерлер</h2>
+      <div class="two" style="margin-top:16px">
+        <div class="note"><b>Қарсы кім?</b> Kazinform көтерілісті Хиуа және Қоқан хандықтарына қарсы деп сипаттайды, ал Wikipedia мен Құрманалин еңбегі отаршылдыққа қарсы қозғалыс деген тұрғыдан жазады. Біз екі бағытты да қарастырамыз.</div>
+        <div class="note"><b>Өмір сүрген жылдары.</b> Көпшілік дереккөз 1803–1889 деп көрсетеді, ал Kazinform бетінің бір жерінде 1807–1888 деп берілген. Жобада 1803–1889 жылдары қолданылады.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="p-sources" class="panel" role="tabpanel" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <span class="kicker">Дереккөздер</span>
+      <h2>Кітаптар, газеттер, монография, ғылыми мақалалар</h2>
+      <p class="lead">Түрі бойынша сүзіңіз. Белгі дереккөздің сенімділігін көрсетеді: шығу тегі мен мақсаты бойынша біздің бағамыз.</p>
+      <div class="chips" id="srcFilters"></div>
+      <div class="srcs" id="srcs"></div>
+      <p style="margin-top:16px"><a href="https://drive.google.com/drive/folders/1r2l70koQNmnKHwhzCBzJmjzlPErGbfef?usp=drive_link" target="_blank" rel="noopener">Біздің дереккөздер папкасы (Google Drive)</a></p>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">D критерийі</span>
+      <h2>OPCVL талдауы: Құрманалин монографиясы</h2>
+      <p class="lead">Талдаған: Муханова Аяулым. Құрманалин, С. Б. (2019). Кіші жүз және Есет Көтібарұлы бастаған ұлт-азаттық көтеріліс (1847–1858 жж.). Орал: Полиграфсервис. 256 бет.</p>
+      <div class="opcvl">
+        <div class="tabs" role="tablist" id="opTabs"></div>
+        <div class="body" id="opBody" role="tabpanel"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUESTIONS ============ -->
+<section id="p-questions" class="panel" role="tabpanel" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <div class="rq">
+        <span class="eyebrow">Зерттеу сұрағы</span>
+        <h2>Есет Көтібарұлы бастаған ұлт-азаттық көтеріліс қазақ қоғамының отаршылдық өзгерістеріне қарсы әрекетіне қаншалықты әсер етті?</h2>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">B критерийі</span>
+      <h2>Сұрақтың өзектілігі</h2>
+      <div style="margin-top:16px">
+        <details open><summary><span class="n">1</span>Анық</summary><div class="ans"><p>Сұрақ нақты әрі түсінікті құрылған: онда Есет Көтібарұлы бастаған ұлт-азаттық көтерілістің қазақ қоғамына әсері қарастырылады. Ол белгілі бір тарихи оқиғаға бағытталған және көтерілістің отаршылдық өзгерістерге қарсы күрестегі рөлін анықтауға мүмкіндік береді. «Қаншалықты әсер етті?» деген тіркес оқиғаны жай сипаттамай, оның себептері мен салдарын талдауға бағыттайды.</p></div></details>
+        <details><summary><span class="n">2</span>Актуалды</summary><div class="ans"><p>Сұрақ бүгін де өзекті, себебі Қазақстанның тәуелсіздігі мен ұлттық бірлігінің тарихи маңызын түсінуге көмектеседі. Көтерілісті зерттеу арқылы қазақ халқының өз жерін, құқықтары мен еркіндігін қорғау жолындағы күресін түсінеміз. Тақырып ұлттық құндылықтарды, тарихи сананы және тәуелсіздікті бағалауға үйретеді.</p></div></details>
+        <details><summary><span class="n">3</span>Мақсатқа бағытталған</summary><div class="ans"><p>Сұрақ «Өзгерістер салдарынан туындаған мүмкіншіліктер мен кедергілерге қоғам бейімделуі немесе қарсы шығуы мүмкін» деген зерттеу идеясымен тікелей байланысты.</p><p>«Өзгеріс» концепті Ресей империясының отаршылдық саясатынан туған өзгерістер арқылы ашылады. «Себеп-салдарлы байланыс» көтерілістің себептері мен нәтижелерін, «қарама-қайшылық пен ынтымақтастық» қазақтар мен патша үкіметі арасындағы қақтығыс пен халықтың бірігуін талдауға мүмкіндік береді. «Уақыт пен кеңістіктегі бағдар» мәнмәтіні жер, шекара және оларға қарсылық мәселесін түсіндіреді.</p></div></details>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">Жетелеуші сұрақтар</span>
+      <h2>Бес жетелеуші сұрақ</h2>
+      <p class="lead">Әр сұрақты ашып, дереккөзге негізделген қысқаша жауапты оқыңыз.</p>
+      <div id="guides"></div>
+    </div>
+
+    <div class="sec">
+      <span class="kicker">Өзіңді сынап көр</span>
+      <h2>Мини-викторина</h2>
+      <div class="quiz" id="quiz" style="margin-top:16px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANIM ============ -->
+<section id="p-anim" class="panel" role="tabpanel" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <span class="kicker">Көтеріліс қалай өтті</span>
+      <h2>Мультфильм: 1847–1858 жылдардағы оқиғалар</h2>
+      <p class="lead">Жеті қысқа көрініс дереккөздердегі деректерге сүйенеді. Әр көріністің астында оқиға мен дереккөз жазылған. Сурет суретші көрінісі: тарихи портреттер немесе нақты қару-жарақ емес.</p>
+      <div class="afilm"><canvas id="acv" aria-label="Көтеріліс оқиғаларының мультфильмі"></canvas></div>
+      <div class="acap" aria-live="polite"><h3 id="aTitle"></h3><p id="aText"></p><span class="src" id="aSrc"></span></div>
+      <div class="actl"><button class="btn" id="aPlay" type="button" aria-pressed="true">Тоқтату</button><input id="aSeek" type="range" min="0" max="1000" value="0" aria-label="Уақыт жолағы"></div>
+      <div class="chips" id="aChap"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAME ============ -->
+<section id="p-game" class="panel" role="tabpanel" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <span class="kicker">Блоктардан жасалған дала</span>
+      <h2>Тарих блоктарын жина</h2>
+      <p class="lead">Жазық даламен жүріп, секіріп, жоғарыдағы сары «?» блоктарына тиіңіз. Әр блок бір сұрақ қояды. Дұрыс жауап тарих блогын береді. Жерді қазып, блоктан құрылыс салуға да болады.</p>
+      <div class="ghud">
+        <div class="gstat"><span id="gProg">Тарих блоктары: 0 / 8</span><span id="gMode">Режим: қазу</span></div>
+        <div class="gtools"><button class="btn alt" id="gModeBtn" type="button">Салу режиміне өту</button><button class="btn alt" id="gReset" type="button">Басынан бастау</button></div>
+      </div>
+      <div class="gwrap">
+        <canvas id="gcv" aria-label="Блоктардан жасалған дала ойыны"></canvas>
+        <div class="gq" id="gq" hidden>
+          <div class="card" role="dialog" aria-live="polite">
+            <span class="kicker" id="gqNum">Сұрақ блогы</span>
+            <h3 id="gqText"></h3>
+            <div class="opts" id="gqOpts"></div>
+            <div class="fb" id="gqFb"></div>
+            <button class="btn" id="gqNext" type="button" hidden>Жалғастыру</button>
+          </div>
+        </div>
+        <div class="gwin" id="gwin" hidden>
+          <div><h3>Жарайсың, батыр!</h3><p id="gwinTxt"></p><button class="btn" id="gwinAgain" type="button">Қайта ойнау</button></div>
+        </div>
+      </div>
+      <div class="hotbar" id="hotbar"></div>
+      <div class="gctl">
+        <div class="pad" aria-label="Басқару батырмалары"><button type="button" data-k="left" aria-label="Солға">‹</button><button type="button" data-k="right" aria-label="Оңға">›</button><button type="button" data-k="jump" aria-label="Секіру">▲</button></div>
+        <p class="lead" style="margin:0;font-size:14px">Компьютерде: A/D немесе ← → жүру, Space секіру, E қазу/салу, 1–5 блок таңдау, тышқанмен блокқа басу. Телефонда: батырмалар мен блокқа түрту.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BIBLIO ============ -->
+<section id="p-biblio" class="panel" role="tabpanel" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <span class="kicker">APA стилі</span>
+      <h2>Библиография</h2>
+      <p class="lead">Дереккөздер алфавит бойынша орналасқан. «Көшіру» батырмасы жазбаны алмасу буферіне салады. Қызыл ескертпе бар жазбаларды плакатқа қоймас бұрын түпнұсқадан тексеріңіз.</p>
+      <ol class="bib" id="bib"></ol>
+    </div>
+    <div class="sec">
+      <div class="note"><b>Мәтіндегі сілтеме үлгісі.</b> Сөзбе-сөз дәйексөз: Құрманалин (2019) көтерілісті ... деп көрсетеді (бет. __). Өз сөзімізбен жазсақ та, дереккөзді көрсетеміз: (Құрманалин, 2019, бет. __). Жылы жоқ дерек үшін (б.ж.) қолданылады.</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Назарбаев Зияткерлік мектебі · 9 «А» · Муханова Аяулым, Мұрат Жамиля, Елеу Ерелхан</span>
+    <button type="button" id="replay">Анимацияны қайта көру</button>
+  </div>
+</footer>
+
+<script>
+/* ---------------- data ---------------- */
+var CAUSES=[
+ {t:"Жер мәселесі және көшпелі өмірге қысым",p:"Автор көтерілістің жер мәселесі мен отарлық басқаруға қарсы наразылықтан туғанын көрсетеді.",s:"Құрманалин, 2019"},
+ {t:"Отарлық басқару жүйесі",p:"Кіші жүздегі отарлық басқару халықтың саяси, әлеуметтік және экономикалық жағдайына әсер етті.",s:"Құрманалин, 2019"},
+ {t:"Салық ауыртпалығы",p:"1854–1858 жылдары Арал маңындағы қазақтар патша әкімшілігінің жоғары салығына наразылық білдіріп көтерілді.",s:"Wikipedia, б.ж."},
+ {t:"Әскери жорықтарға жұмылдыру",p:"1853 жылы Ақмешітті алу жорығына шамамен 8 мың түйе қажет болды.",s:"Wikipedia, б.ж."},
+ {t:"Көрші хандықтар қысымы",p:"Kazinform Есет бастаған күресті Хиуа және Қоқан хандықтарына қарсы соғыспен де байланыстырады.",s:"Kazinform, б.ж."}
+];
+var EVENTS=[
+ {y:"1803",k:"Тұлға",t:"life",h:"Есеттің туған жылы",p:"Ақша өзенінің бойында, Шалқар көлінен шамамен 7–10 км жерде дүниеге келген. Кейбір дереккөздерде 1807 жылы аталады.",s:"Kazinform, б.ж."},
+ {y:"1838",k:"Қарсылық",t:"res",h:"Елек бекінісіне шабуыл",p:"Жоламан батырмен бірге Елек бекінісіне шабуыл жасады.",s:"Kazinform, б.ж."},
+ {y:"18 шілде 1847",k:"Қарсылық",t:"res",h:"Жазалау отрядына шабуыл",p:"Көтібаров 200 казактан құралған жазалау отрядына шабуыл жасады. 1847 жыл көтерілістің басталуы болып саналады.",s:"Лекция 8, б.ж."},
+ {y:"1853",k:"Отарлық шара",t:"col",h:"Ақмешітке жорық",p:"Перовскийдің Ақмешітті алу жорығына шамамен 8 мың түйе қажет болды.",s:"Wikipedia, б.ж."},
+ {y:"1854–1858",k:"Қарсылық",t:"res",h:"Арал өңіріндегі көтеріліс",p:"Арал маңындағы қазақтар патша әкімшілігінің жоғары салығына қарсы көтерілді.",s:"Wikipedia, б.ж."},
+ {y:"1856, желтоқсан",k:"Қарсылық",t:"res",h:"Қазалы фортын қоршау",p:"Жанқожа Нұрмұхамедұлы басшылығындағы күштер Қазалы фортын қоршады. Жанқожа басқа сардарлардың қолдауын іздеп, Есет Көтібаровқа хабар жіберген.",s:"itest.kz, б.ж."},
+ {y:"1858",k:"Отарлық шара",t:"col",h:"Катенин бітім ұсынды",p:"Генерал-губернатор Катенин Есетке бітім ұсынды. Сол жылы Есет ауылдары талқандалды.",s:"Лекция 8, б.ж.; itest.kz, б.ж."},
+ {y:"1858, қыркүйек",k:"Нәтиже",t:"res2",h:"Шошқакөл: қару тастау",p:"Қуғындаған жазалаушылардан кейін Есет Шошқакөл жерінде қаруын тастап, отарлық әкімшілік қызметіне өтуге келісті.",s:"itest.kz, б.ж."},
+ {y:"1889",k:"Тұлға",t:"life",h:"Қайтыс болған жылы",p:"Шалқар ауданындағы Шолақжиде ауылына, туған жеріне жерленген.",s:"Kazinform, б.ж."}
+];
+var FTYPES=[["all","Барлығы"],["Қарсылық","Қарсылық"],["Отарлық шара","Отарлық шара"],["Нәтиже","Нәтиже"],["Тұлға","Тұлға"]];
+var SRC=[
+ {ty:"Монография",r:"h",t:"Кіші жүз және Есет Көтібарұлы бастаған ұлт-азаттық көтеріліс (1847–1858 жж.)",a:"Құрманалин, С. Б. (2019). Орал: Полиграфсервис. 256 б.",u:"https://wku.edu.kz/en/poisk/arkhiv-novostej/226-v-dar-v-fond-nauchnoj-biblioteki",ul:"Монография туралы (БҚИТУ кітапханасы)",n:"Екінші реттік дереккөз. Тарих ғылымдарының кандидаты жазған, әдебиеттер тізімі бар. Қолданылды: себептер, жер мәселесі, отарлық басқару."},
+ {ty:"Ғылыми мақала",r:"h",t:"Kazakh national liberation uprisings against Russian colonial policy: causes of defeats, peculiarities, relationships",a:"Kurmanalin, S. B. (2024). Bulletin of WKITU, 4(32). DOI 10.62724/202440105",u:"https://ojs.wkitu.kz/index.php/test/article/download/92/55/1236",ul:"Мақаланы ашу",n:"Ғылыми журналдағы мақала. Қолданылды: көтерілістердің жеңілу себептері және күш теңсіздігі."},
+ {ty:"Кітап",r:"h",t:"Қанмен жазылған тағдырлар",a:"Төреханов, Т. (1999). Алматы: Атамұра.",u:"",ul:"",n:"Wikipedia дәйектемесінде аталған кітап. Түпнұсқасын KazNEB немесе кітапханадан тексеру қажет."},
+ {ty:"Сайт / энциклопедия",r:"m",t:"Ресейдің Сыр бойын жаулап алуы",a:"e-history.kz (2013, 3 қыркүйек).",u:"https://e-history.kz/kz/history-of-kazakhstan/show/8690",ul:"Мақаланы ашу",n:"Қазақстан тарихы порталы. Сыр өңіріндегі отарлық саясат пен қарсылық. Қолданылды: көтерілістің шығу себептері."},
+ {ty:"Газет / жаңалық",r:"m",t:"Есет батыр",a:"Kazinform (б.ж.).",u:"https://www.inform.kz/ru/eset-batyr_a2190434",ul:"Мақаланы ашу",n:"Ақпарат агенттігінің материалы. Өмірбаяндық деректер, Елек бекінісіне шабуыл, жерленген жері. Мақсаты ақпарат беру, жылы көрсетілмеген."},
+ {ty:"Газет / жаңалық",r:"m",t:"Ақтөбеде ұлы Есет батыр Көтібарұлының еңселі ескерткіші ашылды",a:"Ақтөбе облысы әкімдігі (б.ж.).",u:"https://www.gov.kz/memleket/entities/aktobe/press/news/details/523815",ul:"Жаңалықты ашу",n:"Ресми баспасөз хабары. Бүгінгі жадты көрсетеді, бірақ мерекелік сипаты бар, тарихи талдау емес."},
+ {ty:"Оқу материалы",r:"m",t:"Лекция 8 (Есет Котибаров, Жанкожа Нурмухамедов)",a:"farabi.university (б.ж.).",u:"https://farabi.university/storage/files/30832895806719b7800cb6a679048882_Лекция 8.pdf",ul:"PDF ашу",n:"Университеттің оқу материалы. 18 шілде 1847 және Катенин бітімі туралы дерек. Авторы көрсетілмеген."},
+ {ty:"Сайт / энциклопедия",r:"l",t:"Anti-colonial uprising of Eset Batyr",a:"Wikipedia (б.ж.).",u:"https://en.wikipedia.org/wiki/Anti-colonial_uprising_of_Eset_Batyr",ul:"Бетті ашу",n:"Ашық энциклопедия, кез келген адам өңдей алады. Салыстыру үшін ғана қолданылды, негізгі дерек ретінде емес."},
+ {ty:"Сайт / энциклопедия",r:"l",t:"Восстание под предводительством Есета Котибарова (Жанкожа Нурмухамедов және Есет Котибаров көтерілістері)",a:"itest.kz (б.ж.).",u:"https://itest.kz/ru/export/412",ul:"Бетті ашу",n:"Дайындық сайты, авторы жоқ. 1856 және 1858 жылдардағы деректер басқа дереккөзбен расталуы керек."},
+ {ty:"Газет / жаңалық",td:1,r:"",t:"«Ақтөбе» газеті",a:"Мақала атауы мен күнін өздеріңіз толтырыңыздар.",u:"",ul:"",n:"Біздің жоспардағы дереккөз."},
+ {ty:"Газет / жаңалық",td:1,r:"",t:"«Егемен Қазақстан» басылымы",a:"Мақала атауы мен күнін өздеріңіз толтырыңыздар.",u:"",ul:"",n:"Біздің жоспардағы дереккөз."},
+ {ty:"Сайт / энциклопедия",td:1,r:"",t:"Ust.kz сайты",a:"Мақала атауы мен сілтемесін өздеріңіз толтырыңыздар.",u:"",ul:"",n:"Біздің жоспардағы дереккөз."},
+ {ty:"Кітап",td:1,r:"",t:"«Атамұра» оқулығы және KazNEB-тегі үш кітап",a:"Автор, жыл, бет санын өздеріңіз толтырыңыздар.",u:"",ul:"",n:"Біздің жоспардағы дереккөздер."}
+];
+var STYPES=["Барлығы","Монография","Ғылыми мақала","Кітап","Газет / жаңалық","Сайт / энциклопедия","Оқу материалы"];
+var OP=[
+ ["O","Шығу тегі","Монографияны С. Құрманалин 2019 жылы Оралда «Полиграфсервис» баспасынан шығарған, көлемі 256 бет. Бұл екінші реттік тарихи дереккөз: автор көтеріліс кезінде өмір сүрмеген, көтеріліс аяқталғаннан 161 жыл өткен соң жазған. Ғылыми монография болғандықтан әдебиеттер тізімі бар. Еңбек тәуелсіздік кезеңінде жазылғандықтан, автордың тарихи көзқарасы түсіндіруге әсер етуі мүмкін."],
+ ["P","Мақсаты","1847–1858 жылдардағы көтерілістің себептерін, барысын және тарихи маңызын зерттеу. Автор отарлық саясат Кіші жүз қазақтарының жағдайына қалай әсер еткенін түсіндіреді және көтерілісті жеке әскери қақтығыс ретінде емес, халықтың тәуелсіздік үшін күресінің бөлігі ретінде көрсетеді. Мұндай бағыт оқиғаларды көбіне қазақ халқының мүддесі тұрғысынан түсіндіруге әкелуі мүмкін."],
+ ["C","Мазмұны","ХІХ ғасыр ортасындағы Кіші жүздің қоғамдық-саяси жағдайы және Ресей империясының отарлық саясатына қарсы күрес. Автор көтерілісті отарлық басқару жүйесімен, жер мәселесімен және көшпелі өмірге жасалған қысыммен байланыстырады. Есеттің халықты ұйымдастырудағы рөлі ерекше көрсетіледі."],
+ ["V","Құндылығы","Кітап көтеріліске арнайы арналған зерттеу болғандықтан біздің сұрағымызға тікелей жауап береді. Автор отарлық саясатты көтерілістің алғышарттарымен байланыстырады, бұл оқиғаның неліктен болғанын терең талдауға мүмкіндік береді. Әдебиеттер тізімі басқа зерттеулермен салыстыруға жағдай жасайды."],
+ ["L","Шектеулері","Автор оқиғаның куәгері емес, сондықтан тұжырымдары бұрын сақталған құжаттар мен зерттеулерге сүйенеді. Тәуелсіздік кезеңіндегі тарихнамалық көзқарас бағаға әсер етуі мүмкін, ал Ресей әкімшілігінің ұстанымы жеткіліксіз қарастырылуы ықтимал. Бұл ақпараттың қате екенін білдірмейді, тек архив құжаттарымен және басқа тарихшылардың зерттеулерімен салыстыру қажеттігін көрсетеді."]
+];
+var GUIDES=[
+ {q:"Ресей империясының отаршылдық саясаты қазақ қоғамында қандай өзгерістер туғызды?",a:["Құрманалиннің зерттеуі бойынша отарлық басқару жүйесі, жер мәселесі және көшпелі өмірге түскен қысым Кіші жүздің саяси, әлеуметтік және экономикалық жағдайын өзгертті.","Салық пен жорықтардың салмағы да жоғары болды: Арал маңында ауыр салық наразылық тудырды, ал Ақмешітке жорыққа шамамен 8 мың түйе қажет болды."],s:["Құрманалин, 2019","Wikipedia, б.ж."]},
+ {q:"Осы өзгерістер Есет Көтібарұлы бастаған ұлт-азаттық көтерілістің басталуына қалай әсер етті?",a:["Өзгерістер жер мен шаруашылыққа, дәстүрлі өмірге қауіп төндірді, ал Есет бұған қарсы халықты ұйымдастырды. Көтеріліс 1847 жылы басталды: 18 шілдеде Есет 200 казактан құралған жазалау отрядына шабуыл жасады.","Бұған дейін де ол отарлық бекіністерге қарсы әрекет еткен: 1838 жылы Елек бекінісіне шабуылға қатысты."],s:["Құрманалин, 2019","Лекция 8, б.ж.","Kazinform, б.ж."]},
+ {q:"Есет Көтібарұлы бастаған көтеріліс барысында қазақ халқы қандай кедергілерге тап болды және оларға қалай қарсы тұрды?",a:["Басты кедергі күш пен әскери техника теңсіздігі болды (Құрманалин, 2024). 1858 жылы Есет ауылдары талқандалып, ол қуғынға ұшырады.","Қарсы тұру жолдары: жасақтарды ұйымдастыру, Жанқожа сияқты басқа сардарлармен байланыс жасау және әскери қолдау іздеу."],s:["Kurmanalin, 2024","itest.kz, б.ж."]},
+ {q:"Көтеріліс кезіндегі өзгерістер қазақ қоғамының бірлігі мен күрес тәсілдеріне қалай әсер етті?",a:["Көтеріліс әртүрлі сардарлар мен өңірлерді жақындатты: Жанқожа Есетке хабар жіберіп, қолдау сұраған, 1854–1858 жылдары Арал маңында да наразылық болды. Бұл жеке шабуылдардан үйлестірілген қарсылыққа өту талпынысы еді.","Дереккөздер ұрпақ сабақтастығын да көрсетеді: Есеттің әкесі Сырым Датұлы көтерілісіне қатысқан, ұлы Исатай мен Махамбетті қолдаған."],s:["itest.kz, б.ж.","Wikipedia, б.ж.","Kazinform, б.ж."]},
+ {q:"Есет Көтібарұлы бастаған көтерілістің нәтижесінде қазақ қоғамында қандай өзгерістер орын алды және олардың тарихи маңызы қандай болды?",a:["Көтеріліс басылды: 1858 жылы Катенин бітім ұсынды, қыркүйекте Есет Шошқакөл жерінде қару тастады. Отарлық жүйе сақталды.","Тарихи маңызы жадта қалды: 1858 жылғы орыс баспасөзі Есеттің атын Шамильдің атымен қатар қойған, бүгін Ақтөбеде оған ескерткіш орнатылған, көтеріліс туралы республикалық ғылыми конференция өткен."],s:["Лекция 8, б.ж.","itest.kz, б.ж.","Ақтөбе облысы әкімдігі, б.ж."]}
+];
+var QUIZ=[
+ {q:"Есет Көтібарұлы бастаған көтеріліс қай жылдары болды?",o:["1836–1838","1847–1858","1837–1847","1855–1869"],c:1,e:"Көтеріліс 1847–1858 жылдары Кіші жүз аумағында болды. 1836–1838 жылдар Исатай мен Махамбет көтерілісі."},
+ {q:"18 шілде 1847 жылы Есет кімге шабуыл жасады?",o:["Қоқан әскеріне","Қазалы фортына","200 казактан құралған жазалау отрядына","Орск бекінісіне"],c:2,e:"Лекция 8 бойынша Есет 200 казактан құралған жазалау отрядына шабуыл жасады."},
+ {q:"Құрманалиннің 2019 жылғы монографиясы қандай дереккөзге жатады?",o:["Бірінші реттік, куәгер жазбасы","Екінші реттік, ғылыми монография","Газет хабары","Суретті дерек"],c:1,e:"Автор көтеріліске қатыспаған, 161 жыл өткен соң жазған, сондықтан бұл екінші реттік дереккөз."},
+ {q:"1858 жылы Есетке бітім ұсынған кім?",o:["Перовский","Жанқожа","Катенин","Жоламан"],c:2,e:"Лекция 8 бойынша генерал-губернатор Катенин бітім ұсынды."},
+ {q:"Есет қай жерге жерленген?",o:["Шалқар ауданы, Шолақжиде ауылы","Қызылорда","Орал","Ақмешіт"],c:0,e:"Kazinform бойынша Есет Шалқар ауданындағы Шолақжиде ауылына жерленген."}
+];
+var BIB=[
+ {t:"e-history.kz. (2013, 3 қыркүйек). <i>Ресейдің Сыр бойын жаулап алуы</i>. https://e-history.kz/kz/history-of-kazakhstan/show/8690",n:"Автор мақала бетінде көрсетілсе, алдына қосыңыз."},
+ {t:"Kazinform. (б.ж.). <i>Есет батыр</i>. https://www.inform.kz/ru/eset-batyr_a2190434",n:"Жарияланған күнін бетінен қосыңыз."},
+ {t:"Kurmanalin, S. B. (2024). Kazakh national liberation uprisings against Russian colonial policy: causes of defeats, peculiarities, relationships. <i>Bulletin of WKITU, 4</i>(32). https://doi.org/10.62724/202440105",n:"Мақаланың бет аралығын (49–) толықтырыңыз."},
+ {t:"Wikipedia. (б.ж.). <i>Anti-colonial uprising of Eset Batyr</i>. https://en.wikipedia.org/wiki/Anti-colonial_uprising_of_Eset_Batyr",n:""},
+ {t:"farabi.university. (б.ж.). <i>Лекция 8</i>. https://farabi.university/storage/files/30832895806719b7800cb6a679048882_Лекция 8.pdf",n:"Дәріс авторын PDF-тен тауып қосыңыз."},
+ {t:"itest.kz. (б.ж.). <i>Восстание под предводительством Есета Котибарова (Жанкожа Нурмухамедов және Есет Котибаров көтерілістері)</i>. https://itest.kz/ru/export/412",n:"Бет атауы мен авторын сайттан тексеріңіз."},
+ {t:"Құрманалин, С. Б. (2019). <i>Кіші жүз және Есет Көтібарұлы бастаған ұлт-азаттық көтеріліс (1847–1858 жж.)</i>. Орал: Полиграфсервис.",n:""},
+ {t:"Төреханов, Т. (1999). <i>Қанмен жазылған тағдырлар</i>. Алматы: Атамұра.",n:"Кітаптың өзінен автор есімін және баспаны тексеріңіз."},
+ {t:"Ақтөбе облысы әкімдігі. (б.ж.). <i>Ақтөбеде ұлы Есет батыр Көтібарұлының еңселі ескерткіші ашылды</i>. https://www.gov.kz/memleket/entities/aktobe/press/news/details/523815",n:"Жарияланған күнін бетінен қосыңыз."}
+];
+</script>
+<script>
+(function(){
+var AU=window.AU={ctx:null,on:false,user:false,gal:false};
+var master,tmr,galTmr,noiseBuf,fx,step=0;
+var SC=[293.66,349.23,392,440,523.25,587.33,440,392];
+function init(){
+  if(AU.ctx)return true;
+  var C=window.AudioContext||window.webkitAudioContext;if(!C)return false;
+  var c=AU.ctx=new C();
+  master=c.createGain();master.gain.value=0;master.connect(c.destination);
+  var dl=c.createDelay(1);dl.delayTime.value=.34;
+  var fb=c.createGain();fb.gain.value=.38;
+  var lp=c.createBiquadFilter();lp.type="lowpass";lp.frequency.value=1800;
+  dl.connect(lp);lp.connect(fb);fb.connect(dl);lp.connect(master);fx=dl;
+  var len=c.sampleRate*3,b=c.createBuffer(1,len,c.sampleRate),d=b.getChannelData(0),last=0,i;
+  for(i=0;i<len;i++){last=(last+.02*(Math.random()*2-1))/1.02;d[i]=last*3.2}
+  noiseBuf=b;
+  var src=c.createBufferSource();src.buffer=b;src.loop=true;
+  var bp=c.createBiquadFilter();bp.type="bandpass";bp.frequency.value=480;bp.Q.value=.5;
+  var wg=c.createGain();wg.gain.value=.45;
+  var lfo=c.createOscillator();lfo.frequency.value=.11;
+  var lg=c.createGain();lg.gain.value=.22;lfo.connect(lg);lg.connect(wg.gain);lfo.start();
+  src.connect(bp);bp.connect(wg);wg.connect(master);src.start();
+  [[73.42,.05],[110,.035],[146.83,.02]].forEach(function(p){
+    var o=c.createOscillator();o.type="sine";o.frequency.value=p[0];
+    var g=c.createGain();g.gain.value=p[1];o.connect(g);g.connect(master);o.start();
+  });
+  return true;
+}
+function pluck(f,vol){
+  var c=AU.ctx,t=c.currentTime,o=c.createOscillator(),o2=c.createOscillator(),g=c.createGain(),fl=c.createBiquadFilter();
+  o.type="triangle";o.frequency.value=f;o2.type="sine";o2.frequency.value=f*2;
+  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol,t+.012);g.gain.exponentialRampToValueAtTime(.0008,t+1.7);
+  fl.type="lowpass";fl.frequency.setValueAtTime(2400,t);fl.frequency.exponentialRampToValueAtTime(500,t+1.2);
+  o.connect(fl);o2.connect(fl);fl.connect(g);g.connect(master);g.connect(fx);
+  o.start(t);o2.start(t);o.stop(t+1.9);o2.stop(t+1.9);
+}
+function melody(){
+  if(!AU.on)return;
+  var r=Math.random();step=(step+(r<.6?1:r<.85?-1:2)+SC.length)%SC.length;
+  pluck(SC[step],.07+Math.random()*.03);
+  tmr=setTimeout(melody,1400+Math.random()*1800);
+}
+function hoof(vol){
+  var c=AU.ctx,t=c.currentTime,s=c.createBufferSource(),f=c.createBiquadFilter(),g=c.createGain();
+  s.buffer=noiseBuf;f.type="lowpass";f.frequency.value=240;
+  g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.001,t+.12);
+  s.connect(f);f.connect(g);g.connect(master);s.start(t,Math.random()*2,.15);
+}
+function gallopLoop(){
+  if(!AU.on||!AU.gal)return;
+  [0,120,240].forEach(function(ms,i){setTimeout(function(){if(AU.on&&AU.gal)hoof(i===0?.5:.38)},ms)});
+  galTmr=setTimeout(gallopLoop,640);
+}
+function paint(){
+  [].forEach.call(document.querySelectorAll("[data-snd]"),function(b){
+    b.setAttribute("aria-pressed",AU.on?"true":"false");
+    b.textContent=b.id==="introSnd"?(AU.on?"Дыбысты өшіру":"Дыбысты қосу"):(AU.on?"Дыбыс: қосулы":"Дыбыс: өшірулі");
+  });
+}
+AU.set=function(on){
+  AU.user=true;
+  if(on){
+    if(!init())return;
+    AU.ctx.resume();AU.on=true;
+    var t=AU.ctx.currentTime;master.gain.cancelScheduledValues(t);master.gain.setValueAtTime(master.gain.value,t);master.gain.linearRampToValueAtTime(.9,t+1.6);
+    clearTimeout(tmr);clearTimeout(galTmr);tmr=setTimeout(melody,500);gallopLoop();
+  }else{
+    AU.on=false;clearTimeout(tmr);clearTimeout(galTmr);
+    if(AU.ctx){var t2=AU.ctx.currentTime;master.gain.cancelScheduledValues(t2);master.gain.setValueAtTime(master.gain.value,t2);master.gain.linearRampToValueAtTime(0,t2+.4)}
+  }
+  paint();
+};
+AU.gallopOn=function(v){AU.gal=v;clearTimeout(galTmr);if(v&&AU.on)gallopLoop()};
+AU.sfx=function(type){
+  if(!AU.on||!AU.ctx)return;
+  var c=AU.ctx,t=c.currentTime;
+  function tone(f,t0,dur,wave,vol,f2){
+    var o=c.createOscillator(),g=c.createGain();o.type=wave;o.frequency.setValueAtTime(f,t+t0);
+    if(f2)o.frequency.exponentialRampToValueAtTime(f2,t+t0+dur);
+    g.gain.setValueAtTime(vol,t+t0);g.gain.exponentialRampToValueAtTime(.001,t+t0+dur);
+    o.connect(g);g.connect(master);o.start(t+t0);o.stop(t+t0+dur+.02);
+  }
+  if(type==="ok"){tone(523.25,0,.18,"sine",.2);tone(659.25,.1,.18,"sine",.2);tone(783.99,.2,.4,"sine",.22)}
+  else if(type==="no"){tone(180,0,.35,"sawtooth",.12,90)}
+  else if(type==="block"){tone(440,0,.1,"square",.07);tone(660,.08,.14,"square",.07)}
+  else if(type==="jump"){tone(260,0,.16,"sine",.1,520)}
+  else if(type==="dig"){tone(140,0,.08,"square",.08,80)}
+  else if(type==="place"){tone(200,0,.08,"square",.07,260)}
+};
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-snd]");if(b)AU.set(!AU.on)});
+function first(e){document.removeEventListener("pointerdown",first,true);document.removeEventListener("keydown",first,true);if(AU.user)return;if(e.target&&e.target.closest&&e.target.closest("[data-snd]"))return;AU.set(true)}
+document.addEventListener("pointerdown",first,true);
+document.addEventListener("keydown",first,true);
+document.addEventListener("DOMContentLoaded",paint);
+setTimeout(paint,0);
+})();
+</script>
+<script>
+(function(){
+function $(s,r){return (r||document).querySelector(s)}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+
+/* ---------- tabs ---------- */
+var TABS=["home","topics","sources","questions","anim","game","biblio"];
+function show(tab,push){
+  if(TABS.indexOf(tab)<0)tab="home";
+  TABS.forEach(function(t){var p=$("#p-"+t);if(p)p.hidden=(t!==tab)});
+  $$("nav button").forEach(function(b){b.setAttribute("aria-selected",b.dataset.tab===tab?"true":"false")});
+  if(push){try{location.hash=tab}catch(e){}}
+  window.scrollTo(0,0);
+}
+$$("nav button").forEach(function(b){b.addEventListener("click",function(){show(b.dataset.tab,true)})});
+$$("[data-go]").forEach(function(b){b.addEventListener("click",function(){show(b.dataset.go,true)})});
+window.addEventListener("hashchange",function(){show((location.hash||"").slice(1),false)});
+
+/* ---------- causes ---------- */
+$("#causes").innerHTML=CAUSES.map(function(c){return '<div class="card"><h3>'+c.t+'</h3><p>'+c.p+'</p><span class="src">'+c.s+'</span></div>'}).join("");
+
+/* ---------- timeline ---------- */
+var tlf=$("#tlFilters"),tl=$("#tl"),curF="all";
+function kindOf(e){return e.k}
+tl.innerHTML=EVENTS.map(function(e){
+  var t=e.t==="res2"?"res":e.t;
+  return '<li data-k="'+e.k+'" data-t="'+t+'"><div class="yr">'+e.y+'<small>'+e.k+'</small></div><div><h3>'+e.h+'</h3><p>'+e.p+'</p><span class="src">'+e.s+'</span></div></li>';
+}).join("");
+tlf.innerHTML=FTYPES.map(function(f){return '<button type="button" class="fbtn" data-f="'+f[0]+'" aria-pressed="'+(f[0]==="all")+'">'+f[1]+'</button>'}).join("");
+tlf.addEventListener("click",function(ev){
+  var b=ev.target.closest("[data-f]");if(!b)return;curF=b.dataset.f;
+  $$("#tlFilters .fbtn").forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
+  $$("#tl li").forEach(function(li){li.hidden=!(curF==="all"||li.dataset.k===curF)});
+});
+
+/* ---------- sources ---------- */
+var sf=$("#srcFilters"),sl=$("#srcs");
+function relLabel(r){return r==="h"?["h","Сенімділігі жоғары"]:r==="m"?["m","Сенімділігі орташа"]:r==="l"?["l","Сенімділігі төмен"]:null}
+sl.innerHTML=SRC.map(function(s){
+  var rl=relLabel(s.r),meta='<span class="chip">'+s.ty+'</span>'+(rl?'<span class="rel '+rl[0]+'">'+rl[1]+'</span>':'<span class="chip">Толтыру керек</span>');
+  return '<article class="scard'+(s.td?' todo':'')+'" data-ty="'+s.ty+'"><div class="meta">'+meta+'</div><h3>'+s.t+'</h3><div class="apa">'+s.a+'</div><p>'+s.n+'</p>'+(s.u?'<a href="'+s.u+'" target="_blank" rel="noopener">'+s.ul+'</a>':'')+'</article>';
+}).join("");
+sf.innerHTML=STYPES.map(function(t,i){return '<button type="button" class="fbtn" data-ty="'+t+'" aria-pressed="'+(i===0)+'">'+t+'</button>'}).join("");
+sf.addEventListener("click",function(ev){
+  var b=ev.target.closest("[data-ty]");if(!b)return;var ty=b.dataset.ty;
+  $$("#srcFilters .fbtn").forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
+  $$("#srcs .scard").forEach(function(c){c.hidden=!(ty==="Барлығы"||c.dataset.ty===ty)});
+});
+
+/* ---------- OPCVL ---------- */
+var opT=$("#opTabs"),opB=$("#opBody");
+opT.innerHTML=OP.map(function(o,i){return '<button type="button" role="tab" data-i="'+i+'" aria-selected="'+(i===0)+'"><b>'+o[0]+'</b>'+o[1]+'</button>'}).join("");
+function opShow(i){opB.innerHTML='<p>'+OP[i][2]+'</p>';$$("#opTabs button").forEach(function(b){b.setAttribute("aria-selected",+b.dataset.i===i?"true":"false")})}
+opT.addEventListener("click",function(ev){var b=ev.target.closest("[data-i]");if(b)opShow(+b.dataset.i)});
+opShow(0);
+
+/* ---------- guiding questions ---------- */
+$("#guides").innerHTML=GUIDES.map(function(g,i){
+  return '<details'+(i===0?' open':'')+'><summary><span class="n">'+(i+1)+'</span>'+g.q+'</summary><div class="ans">'+g.a.map(function(p){return '<p>'+p+'</p>'}).join("")+'<div class="tagrow">'+g.s.map(function(s){return '<span class="chip">'+s+'</span>'}).join("")+'</div></div></details>';
+}).join("");
+
+/* ---------- quiz ---------- */
+var qi=0,score=0,qEl=$("#quiz");
+function renderQ(){
+  if(qi>=QUIZ.length){
+    qEl.innerHTML='<div class="qprog">Аяқталды</div><h3>Нәтиже: '+score+' / '+QUIZ.length+'</h3><p class="fb">'+(score===QUIZ.length?"Тамаша, барлық жауап дұрыс.":"Қателескен сұрақтардың жауабын «Рубрикалар» бөлімінен табасыз.")+'</p><button class="btn" id="qAgain" type="button">Қайта бастау</button>';
+    $("#qAgain").onclick=function(){qi=0;score=0;renderQ()};return;
+  }
+  var q=QUIZ[qi];
+  qEl.innerHTML='<div class="qprog">Сұрақ '+(qi+1)+' / '+QUIZ.length+'</div><h3>'+q.q+'</h3><div class="opts">'+q.o.map(function(o,i){return '<button type="button" class="opt" data-i="'+i+'">'+o+'</button>'}).join("")+'</div><div class="fb" id="fb" aria-live="polite"></div>';
+  $$(".opt",qEl).forEach(function(b){b.onclick=function(){
+    var i=+b.dataset.i,ok=i===q.c;if(ok)score++;
+    $$(".opt",qEl).forEach(function(x){x.disabled=true;if(+x.dataset.i===q.c)x.classList.add("ok")});
+    if(!ok)b.classList.add("no");
+    $("#fb").textContent=(ok?"Дұрыс. ":"Дұрыс емес. ")+q.e;
+    var nb=document.createElement("button");nb.className="btn";nb.type="button";nb.textContent=qi===QUIZ.length-1?"Нәтижені көру":"Келесі сұрақ";
+    nb.onclick=function(){qi++;renderQ()};qEl.appendChild(nb);
+  }});
+}
+renderQ();
+
+/* ---------- bibliography ---------- */
+$("#bib").innerHTML=BIB.map(function(b,i){
+  return '<li><div class="txt" id="bib'+i+'">'+b.t+(b.n?'<small>'+b.n+'</small>':'')+'</div><button class="copy" type="button" data-i="'+i+'">Көшіру</button></li>';
+}).join("");
+$("#bib").addEventListener("click",function(ev){
+  var b=ev.target.closest(".copy");if(!b)return;
+  var el=$("#bib"+b.dataset.i),clone=el.cloneNode(true),sm=clone.querySelector("small");if(sm)sm.remove();
+  var txt=clone.textContent.trim();
+  function done(){b.textContent="Көшірілді";b.classList.add("done");setTimeout(function(){b.textContent="Көшіру";b.classList.remove("done")},1600)}
+  function fallback(){try{var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Таңдалды, Ctrl+C"}catch(e){}}
+  try{navigator.clipboard.writeText(txt).then(done,fallback)}catch(e){fallback()}
+});
+
+/* ---------- intro animation ---------- */
+var ov=$("#intro"),cv=$("#introCv"),ctx=cv.getContext("2d"),cap=$("#introCap"),skip=$("#skipIntro");
+var W=0,H=0,raf=0,t0=0,running=false,dust=[];
+var DUR=17000,reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+function resize(){var d=Math.min(devicePixelRatio||1,2);W=ov.clientWidth;H=ov.clientHeight;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0)}
+function lerp(a,b,t){return a+(b-a)*t}
+function mix(a,b,t){return [Math.round(lerp(a[0],b[0],t)),Math.round(lerp(a[1],b[1],t)),Math.round(lerp(a[2],b[2],t))]}
+function rgb(a,al){return al==null?"rgb("+a[0]+","+a[1]+","+a[2]+")":"rgba("+a[0]+","+a[1]+","+a[2]+","+al+")"}
+function ease(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
+var stars=[],blades=[],i;
+for(i=0;i<90;i++)stars.push({x:Math.random(),y:Math.random()*.5,r:Math.random()*1.2+.3,tw:Math.random()*6});
+for(i=0;i<280;i++)blades.push({x:Math.random(),h:8+Math.random()*16,ph:Math.random()*6.28,l:Math.random()});
+var CAPS=[[0,.3,"XIX ғасыр. Шексіз жазық дала, таң ата бастады."],[.3,.62,"1847 жыл. Есет батыр жасағымен жолға шықты."],[.62,1,"Жер мен ел еркіндігі үшін күрес басталды."]];
+function hills(base,amp,f1,f2,ph,fill){
+  ctx.beginPath();ctx.moveTo(0,H);
+  for(var x=0;x<=W;x+=8){ctx.lineTo(x,base-amp*(Math.sin(x*f1+ph)*.6+Math.sin(x*f2+ph*2)*.4))}
+  ctx.lineTo(W,H);ctx.closePath();ctx.fillStyle=fill;ctx.fill();
+}
+function fort(x,y,k,fill){
+  ctx.save();ctx.translate(x,y);ctx.scale(k,k);ctx.fillStyle=fill;
+  ctx.fillRect(-60,-22,120,22);ctx.fillRect(-66,-40,18,40);ctx.fillRect(48,-40,18,40);
+  ctx.beginPath();ctx.moveTo(-70,-40);ctx.lineTo(-57,-52);ctx.lineTo(-44,-40);ctx.fill();
+  ctx.beginPath();ctx.moveTo(44,-40);ctx.lineTo(57,-52);ctx.lineTo(70,-40);ctx.fill();
+  ctx.fillRect(-1.5,-62,3,22);ctx.fillRect(1.5,-62,14,8);
+  ctx.restore();
+}
+var flagImg=(function(){
+  var c=document.createElement("canvas");c.width=240;c.height=120;var x=c.getContext("2d"),k;
+  x.fillStyle="#00afca";x.fillRect(0,0,240,120);
+  x.fillStyle="#fec50c";
+  for(k=0;k<6;k++){var y0=k*20+10;x.beginPath();x.moveTo(4,y0-8);x.quadraticCurveTo(18,y0-8,18,y0);x.quadraticCurveTo(18,y0+8,4,y0+8);x.quadraticCurveTo(12,y0+4,12,y0);x.quadraticCurveTo(12,y0-4,4,y0-8);x.fill()}
+  var cx=134,cy=46;
+  x.beginPath();x.arc(cx,cy,18,0,7);x.fill();
+  for(k=0;k<32;k++){var a=k/32*6.2832;x.beginPath();x.moveTo(cx+Math.cos(a-.06)*21,cy+Math.sin(a-.06)*21);x.lineTo(cx+Math.cos(a)*31,cy+Math.sin(a)*31);x.lineTo(cx+Math.cos(a+.06)*21,cy+Math.sin(a+.06)*21);x.fill()}
+  x.beginPath();x.ellipse(134,92,6,10,0,0,7);x.fill();
+  x.beginPath();x.moveTo(129,86);x.quadraticCurveTo(98,68,82,90);x.quadraticCurveTo(100,86,112,98);x.quadraticCurveTo(120,106,129,102);x.fill();
+  x.beginPath();x.moveTo(139,86);x.quadraticCurveTo(170,68,186,90);x.quadraticCurveTo(168,86,156,98);x.quadraticCurveTo(148,106,139,102);x.fill();
+  x.beginPath();x.arc(134,80,4.6,0,7);x.fill();
+  x.beginPath();x.moveTo(129,102);x.lineTo(134,114);x.lineTo(139,102);x.fill();
+  return c;
+})();
+function drawFlag(px,py,time){
+  var S=30,L=96,h=48,sw=flagImg.width/S,i,d;
+  for(i=0;i<S;i++){
+    d=i/S*L;
+    var yo=Math.sin(time*.012+d*.11)*(d/L)*6,xo=Math.cos(time*.012+d*.11)*(d/L)*1.5;
+    ctx.drawImage(flagImg,i*sw,0,sw+1,flagImg.height,px-d-L/S+xo,py+yo,L/S+1.2,h);
+  }
+}
+function leg(hx,hy,p,front){
+  var lift=Math.max(0,Math.cos(p)),fx=hx+Math.sin(p)*13,fy=hy+21-lift*10;
+  var kx=(hx+fx)/2+(front?6:-6)*(1+lift*.4),ky=(hy+fy)/2-2;
+  ctx.lineWidth=5.2;ctx.beginPath();ctx.moveTo(hx,hy);ctx.lineTo(kx,ky);ctx.stroke();
+  ctx.lineWidth=3.2;ctx.beginPath();ctx.moveTo(kx,ky);ctx.lineTo(fx,fy);ctx.stroke();
+  ctx.beginPath();ctx.ellipse(fx+1,fy,2.8,1.9,0,0,7);ctx.fill();
+}
+function person(col,coat,skin,leader,time,ph){
+  ctx.strokeStyle=coat;ctx.lineWidth=6;ctx.beginPath();ctx.moveTo(-2,-14);ctx.lineTo(9,-6);ctx.stroke();
+  ctx.strokeStyle=col;ctx.lineWidth=4.6;ctx.beginPath();ctx.moveTo(9,-6);ctx.lineTo(3,6+Math.sin(ph));ctx.stroke();
+  ctx.save();ctx.translate(-2,-15);ctx.rotate(.14);
+  var w=Math.sin(time*.02+ph)*3;
+  ctx.fillStyle=coat;
+  ctx.beginPath();ctx.moveTo(-6,0);ctx.lineTo(6,0);ctx.lineTo(7,-12);ctx.lineTo(5,-23);ctx.lineTo(-5,-23);ctx.lineTo(-7,-10);ctx.closePath();ctx.fill();
+  ctx.beginPath();ctx.moveTo(-6,-2);ctx.lineTo(-18+w,6);ctx.lineTo(-15+w,13);ctx.lineTo(0,5);ctx.closePath();ctx.fill();
+  if(leader){ctx.fillStyle="#e6b23c";ctx.fillRect(-6.5,-8,13.5,2.4)}
+  ctx.strokeStyle=coat;ctx.lineWidth=4.6;ctx.beginPath();ctx.moveTo(1,-20);ctx.lineTo(9,-14);ctx.lineTo(16,-18);ctx.stroke();
+  ctx.fillStyle=skin;ctx.fillRect(-1.5,-26,5,4);
+  ctx.beginPath();ctx.arc(1,-29,5.2,0,7);ctx.fill();
+  ctx.beginPath();ctx.moveTo(5.5,-30);ctx.lineTo(9,-28);ctx.lineTo(5.5,-26.5);ctx.fill();
+  ctx.fillStyle=col;
+  ctx.beginPath();ctx.ellipse(1,-33,7.8,2.5,-.1,0,7);ctx.fill();
+  ctx.beginPath();ctx.moveTo(-5.5,-33);ctx.quadraticCurveTo(-5.5,-44,1,-44);ctx.quadraticCurveTo(7.5,-44,7.5,-33);ctx.closePath();ctx.fill();
+  ctx.restore();
+}
+function rider(x,y,u,ph,col,leader,time){
+  ctx.save();ctx.translate(x,y+Math.sin(ph*2)*2*u);ctx.scale(u,u);
+  ctx.fillStyle=col;ctx.strokeStyle=col;ctx.lineCap="round";ctx.lineJoin="round";
+  leg(-20,4,ph+2.6,false);leg(18,3,ph+.6,true);
+  ctx.beginPath();ctx.moveTo(-30,-6);
+  ctx.bezierCurveTo(-30,-16,-16,-17,-6,-14);
+  ctx.bezierCurveTo(4,-12,12,-15,20,-16);
+  ctx.bezierCurveTo(26,-20,30,-30,36,-34);
+  ctx.lineTo(40,-35);ctx.lineTo(42,-40);ctx.lineTo(45,-35);
+  ctx.bezierCurveTo(50,-33,56,-27,57,-22);
+  ctx.bezierCurveTo(57,-18,52,-18,49,-21);
+  ctx.bezierCurveTo(44,-24,40,-20,36,-14);
+  ctx.bezierCurveTo(32,-8,28,2,22,6);
+  ctx.bezierCurveTo(12,12,-8,12,-18,8);
+  ctx.bezierCurveTo(-26,6,-30,2,-30,-6);
+  ctx.closePath();ctx.fill();
+  ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(-29,-9);ctx.quadraticCurveTo(-42,-11+Math.sin(ph)*5,-52,2+Math.sin(ph+1)*6);ctx.stroke();
+  ctx.lineWidth=2.6;ctx.beginPath();ctx.moveTo(-29,-7);ctx.quadraticCurveTo(-44,-4+Math.sin(ph+.5)*5,-50,9+Math.sin(ph+1.4)*6);ctx.stroke();
+  var m,t,mx,my;ctx.lineWidth=2.4;
+  for(m=0;m<6;m++){t=m/5;mx=lerp(20,36,t);my=lerp(-16,-34,t);ctx.beginPath();ctx.moveTo(mx,my);ctx.quadraticCurveTo(mx-4,my-4+Math.sin(ph+m)*1.5,mx-9,my+1+Math.sin(ph+m)*2.5);ctx.stroke()}
+  leg(-14,5,ph+3.3,false);leg(24,4,ph+1.2,true);
+  person(col,leader?"#1f6f94":col,leader?"#c08a5e":col,leader,time,ph);
+  ctx.strokeStyle=col;ctx.lineWidth=1.9;ctx.beginPath();ctx.moveTo(4,-4);ctx.lineTo(46,-116);ctx.stroke();
+  if(leader){drawFlag(45.5,-114,time)}
+  else{ctx.fillStyle="#c9d3d8";ctx.beginPath();ctx.moveTo(44,-110);ctx.lineTo(48,-122);ctx.lineTo(52,-110);ctx.closePath();ctx.fill()}
+  ctx.restore();
+}
+function frame(p,ms,moving){
+  var s=ease(Math.min(1,p/.8)),horizon=H*.6,u=Math.max(.75,Math.min(1.5,Math.min(W,H)/520));
+  var g=ctx.createLinearGradient(0,0,0,horizon+20);
+  g.addColorStop(0,rgb(mix([8,16,38],[34,82,124],s)));
+  g.addColorStop(.6,rgb(mix([20,36,72],[116,158,176],s)));
+  g.addColorStop(1,rgb(mix([34,52,88],[246,180,92],s)));
+  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  stars.forEach(function(st){var a=Math.max(0,1-s*1.4)*(.6+.4*Math.sin(ms*.002+st.tw));if(a>0){ctx.fillStyle="rgba(255,255,255,"+a+")";ctx.beginPath();ctx.arc(st.x*W,st.y*H,st.r,0,7);ctx.fill()}});
+  var sx=W*.72,sy=horizon+26-s*H*.15,sr=Math.min(W,H)*.07;
+  var sg=ctx.createRadialGradient(sx,sy,sr*.3,sx,sy,sr*4.5);
+  sg.addColorStop(0,"rgba(255,214,120,"+(.9*s)+")");sg.addColorStop(1,"rgba(255,170,80,0)");
+  ctx.fillStyle=sg;ctx.fillRect(0,0,W,horizon+40);
+  ctx.fillStyle="rgba(255,232,170,"+s+")";ctx.beginPath();ctx.arc(sx,sy,sr,0,7);ctx.fill();
+  var far=rgb(mix([14,28,48],[52,86,104],s));
+  hills(horizon+4,H*.035,.004,.011,1,far);
+  if(p>.3){var kk=Math.min(W,H)/700*lerp(.55,1.15,Math.min(1,(p-.3)/.7));fort(W*.8,horizon-6,kk,rgb(mix([10,20,34],[34,60,76],s)))}
+  hills(horizon+22,H*.04,.003,.008,3,rgb(mix([10,22,36],[32,62,74],s)));
+  var gy=H*.74,gg=ctx.createLinearGradient(0,gy-20,0,H);
+  gg.addColorStop(0,rgb(mix([12,26,34],[58,92,66],s)));gg.addColorStop(1,rgb(mix([6,14,20],[20,40,38],s)));
+  hills(gy,H*.015,.005,.013,5,gg);
+  ctx.lineCap="round";
+  blades.forEach(function(b){
+    var by=gy+b.l*(H*.26)+4,bx=(((b.x*W-ms*(.05+b.l*.2))%W)+W)%W,sw=Math.sin(ms*.002+b.ph+bx*.01)*5*(b.h/16),hh=b.h*(.6+b.l);
+    ctx.strokeStyle=rgb(mix([18,40,36],[84,124,76],s),.65);ctx.lineWidth=1.2+b.l;
+    ctx.beginPath();ctx.moveTo(bx,by);ctx.quadraticCurveTo(bx+sw*.4,by-hh*.5,bx+sw,by-hh);ctx.stroke();
+  });
+  var lead=W*lerp(.3,.62,p)+(p>.82?(p-.82)*W*.35:0),base=H*.8;
+  var riders=[];
+  for(var n=0;n<9;n++){
+    var col=Math.floor((n+1)/2),side=n%2?1:-1;
+    riders.push({x:lead-col*88*u-(n%2)*26*u,y:base+(n?side*col*7*u:0),sc:u*.78*(1+(n?side*col*.025:0)),ph:ms*.016+n*.9,ld:n===0});
+  }
+  riders.sort(function(a,b){return a.y-b.y});
+  var rc=rgb(mix([6,10,18],[30,24,26],s));
+  riders.forEach(function(r){
+    if(moving&&Math.random()<.35)dust.push({x:r.x-30*r.sc,y:r.y+17*r.sc,vx:-.8-Math.random()*.6,vy:-.2-Math.random()*.4,l:1,r:3+Math.random()*4});
+    rider(r.x,r.y,r.sc,r.ph,rc,r.ld,ms);
+  });
+  for(var d=dust.length-1;d>=0;d--){
+    var q=dust[d];q.x+=q.vx;q.y+=q.vy;q.l-=.014;q.r+=.18;
+    if(q.l<=0){dust.splice(d,1);continue}
+    ctx.fillStyle="rgba(205,170,120,"+(q.l*.32)+")";ctx.beginPath();ctx.arc(q.x,q.y,q.r,0,7);ctx.fill();
+  }
+  var vg=ctx.createLinearGradient(0,H*.8,0,H);vg.addColorStop(0,"rgba(0,0,0,0)");vg.addColorStop(1,"rgba(0,0,0,.45)");ctx.fillStyle=vg;ctx.fillRect(0,H*.8,W,H*.2);
+  var c=CAPS.filter(function(c){return p>=c[0]&&p<c[1]})[0];
+  if(c&&cap.textContent!==c[2]){cap.classList.add("hide");setTimeout(function(){cap.textContent=c[2];cap.classList.remove("hide")},260)}
+}
+function loop(now){
+  if(!running)return;
+  if(!t0)t0=now;var ms=now-t0,p=Math.min(1,ms/DUR);
+  frame(p,ms,true);
+  if(p>=1){finish();return}
+  raf=requestAnimationFrame(loop);
+}
+function finish(){
+  if(window.AU)AU.gallopOn(false);
+  running=false;cancelAnimationFrame(raf);
+  ov.classList.add("out");
+  setTimeout(function(){ov.hidden=true;document.body.classList.remove("lock")},750);
+}
+function start(){
+  if(window.AU)AU.gallopOn(!reduce);
+  ov.hidden=false;ov.classList.remove("out");document.body.classList.add("lock");
+  resize();dust=[];t0=0;cap.textContent=CAPS[0][2];
+  if(reduce){frame(.55,6000,false);cap.textContent=CAPS[1][2];running=false;skip.textContent="Сайтқа кіру";return}
+  skip.textContent="Өткізіп жіберу";running=true;raf=requestAnimationFrame(loop);
+}
+skip.addEventListener("click",finish);
+$("#replay").addEventListener("click",function(){window.scrollTo(0,0);start()});
+window.addEventListener("resize",function(){if(!ov.hidden){resize();if(!running)frame(.55,6000,false)}});
+
+show((location.hash||"").slice(1),false);
+start();
+})();
+</script>
+<script>
+(function(){
+function $(s,r){return (r||document).querySelector(s)}
+var panel=$("#p-game"),cv=$("#gcv"),ctx=cv.getContext("2d");
+var COLS=140,ROWS=16,VIS=13,TS=32,W=0,H=0,DPR=1;
+var GRASS=1,DIRT=2,STONE=3,WOOD=4,GOLD=8,SOLID={1:1,2:1,3:1,4:1,8:1};
+var SLOTS=[GRASS,DIRT,STONE,WOOD,GOLD],SNAME=["Шөп","Топырақ","Тас","Тақтай","Тарих блогы"];
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;var t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+var R=rng(7);
+function tex(fn){var c=document.createElement("canvas");c.width=c.height=16;fn(c.getContext("2d"));return c}
+function speckle(x,base,cols,n){x.fillStyle=base;x.fillRect(0,0,16,16);for(var i=0;i<n;i++){x.fillStyle=cols[(R()*cols.length)|0];x.fillRect((R()*16)|0,(R()*16)|0,1+((R()*2)|0),1)}}
+function bm(x,rows,ox,oy,col,s){x.fillStyle=col;rows.forEach(function(r,j){for(var i=0;i<r.length;i++)if(r[i]==="X")x.fillRect(ox+i*s,oy+j*s,s,s)})}
+var T={};
+T[DIRT]=tex(function(x){speckle(x,"#8b5a2b",["#7a4c22","#9c6a38","#6e4420"],40)});
+T[STONE]=tex(function(x){speckle(x,"#8a8f94",["#7a7f84","#9aa0a5","#6d7277"],44);x.fillStyle="#5f6469";x.fillRect(3,5,3,1);x.fillRect(9,11,4,1)});
+T[GRASS]=tex(function(x){speckle(x,"#8b5a2b",["#7a4c22","#9c6a38"],30);for(var i=0;i<16;i++){x.fillStyle=R()<.5?"#5fa844":"#4e9437";x.fillRect(i,0,1,4+((R()*2)|0))}});
+T[WOOD]=tex(function(x){x.fillStyle="#b88a4f";x.fillRect(0,0,16,16);x.fillStyle="#9a7040";for(var i=0;i<4;i++)x.fillRect(0,i*4+3,16,1);x.fillRect(5,0,1,4);x.fillRect(11,4,1,4);x.fillRect(4,8,1,4);x.fillRect(10,12,1,4)});
+T[GOLD]=tex(function(x){x.fillStyle="#e2b231";x.fillRect(0,0,16,16);x.fillStyle="#f6d867";x.fillRect(1,1,14,2);x.fillRect(1,1,2,14);x.fillStyle="#b88a15";x.fillRect(1,13,14,2);x.fillRect(13,1,2,14);x.fillStyle="#fff1a8";x.fillRect(4,4,3,1);x.fillRect(4,4,1,3)});
+T.q=tex(function(x){x.fillStyle="#e8b630";x.fillRect(0,0,16,16);x.fillStyle="#7a5410";x.fillRect(0,0,16,1);x.fillRect(0,15,16,1);x.fillRect(0,0,1,16);x.fillRect(15,0,1,16);x.fillStyle="#f7de7a";x.fillRect(1,1,14,1);x.fillRect(1,1,1,14);bm(x,[".XXXX.","XX..XX","....XX","..XXX.","..XX..","......","..XX.."],2,1,"#5b3d08",2)});
+T.ok=tex(function(x){x.fillStyle="#3fae6a";x.fillRect(0,0,16,16);x.fillStyle="#1d6b3e";x.fillRect(0,0,16,1);x.fillRect(0,15,16,1);x.fillRect(0,0,1,16);x.fillRect(15,0,1,16);x.fillStyle="#7be0a0";x.fillRect(1,1,14,1);x.fillRect(1,1,1,14);bm(x,[".....X","X...XX","XX.XX.",".XXX..","..X..."],2,3,"#ffffff",2)});
+T.bad=tex(function(x){x.drawImage(T.q,0,0);x.fillStyle="rgba(200,40,30,.45)";x.fillRect(0,0,16,16)});
+T.leaf=tex(function(x){speckle(x,"#3f8f3a",["#2f7a2e","#56a84a","#2a6b2a"],50)});
+T.log=tex(function(x){x.fillStyle="#6b4a2a";x.fillRect(0,0,16,16);x.fillStyle="#553a20";x.fillRect(3,0,2,16);x.fillRect(10,0,2,16);x.fillStyle="#7d5a35";x.fillRect(6,0,1,16)});
+var KEYS={left:0,right:0,jump:0},map,hgt,deco,qbs,p,inv,sel=0,mode="dig",collected=0,attempts=0,modal=null,lastClose=0,camX=0,clouds=[],now=0;
+var GQ=[
+ {q:"Есет Көтібарұлы бастаған көтеріліс қай жылдары болды?",o:["1836–1838","1847–1858","1837–1847","1855–1869"],c:1,e:"Көтеріліс 1847–1858 жылдары Кіші жүз аумағында болды."},
+ {q:"18 шілде 1847 жылы Есет кімге шабуыл жасады?",o:["Қоқан әскеріне","Қазалы фортына","200 казактан құралған жазалау отрядына","Орск бекінісіне"],c:2,e:"Лекция 8 бойынша Есет 200 казактан құралған жазалау отрядына шабуыл жасады."},
+ {q:"1838 жылы Есет Жоламан батырмен бірге қай бекініске шабуыл жасады?",o:["Елек бекінісіне","Ақмешітке","Қазалы фортына","Орынборға"],c:0,e:"Kazinform бойынша Елек бекінісіне."},
+ {q:"1856 жылы желтоқсанда Қазалы фортын қоршаған күштерді кім басқарды?",o:["Исатай Тайманұлы","Жанқожа Нұрмұхамедұлы","Кенесары Қасымұлы","Махамбет Өтемісұлы"],c:1,e:"itest.kz бойынша Қазалы фортын Жанқожа Нұрмұхамедұлы басқарған күштер қоршады."},
+ {q:"1854–1858 жылдары Арал маңындағы қазақтар неге наразы болды?",o:["Жоғары салыққа","Қуаңшылыққа","Қоқан жорығына","Жайылым тапшылығына"],c:0,e:"Wikipedia бойынша наразылықтың себебі патша әкімшілігінің жоғары салығы болды."},
+ {q:"Ақмешітті алу жорығына шамамен қанша түйе қажет болды?",o:["800","3 мың","8 мың","20 мың"],c:2,e:"Wikipedia бойынша жорыққа шамамен 8 мың түйе қажет болды."},
+ {q:"1858 жылы Есетке бітім ұсынған кім?",o:["Генерал-губернатор Катенин","Перовский","Жанқожа","Жоламан"],c:0,e:"Лекция 8 бойынша бітімді генерал-губернатор Катенин ұсынды."},
+ {q:"Есет Көтібарұлы қай жерге жерленген?",o:["Қызылорда қаласына","Шалқар ауданы, Шолақжиде ауылына","Орал қаласына","Ақмешітке"],c:1,e:"Kazinform бойынша Шалқар ауданындағы Шолақжиде ауылына жерленген."}
+];
+function newGame(){
+  var r2=rng(21),x,y;
+  map=[];for(y=0;y<ROWS;y++)map.push(new Uint8Array(COLS));
+  hgt=[];
+  for(x=0;x<COLS;x++){var th=Math.round(10+Math.sin(x*.13)*1.3+Math.sin(x*.047+1)*1.4);th=Math.max(8,Math.min(12,th));if(x>0)th=Math.max(hgt[x-1]-1,Math.min(hgt[x-1]+1,th));hgt.push(th)}
+  for(x=0;x<COLS;x++)for(y=hgt[x];y<ROWS;y++)map[y][x]=y===hgt[x]?GRASS:(y<hgt[x]+4?DIRT:STONE);
+  deco=[];
+  for(x=2;x<COLS-1;x++){var q=r2();if(q<.07&&x>7)deco.push({t:"tree",x:x,h:3+((r2()*2)|0)});else if(q<.35)deco.push({t:"fl",x:x,c:["#e8d84a","#e25a7a","#ffffff","#7a9be8"][(r2()*4)|0]});x+=q<.07?2:0}
+  qbs=[12,26,40,54,68,84,100,118].map(function(c,i){return{c:c,r:hgt[c]-4,st:0,q:i}});
+  p={x:3.5,y:hgt[3]-1.85,vx:0,vy:0,w:.6,h:1.8,face:1,on:false,anim:0};
+  inv=[0,0,0,5,0];collected=0;attempts=0;modal=null;sel=0;mode="dig";lastClose=0;
+  clouds=[];for(var i=0;i<14;i++)clouds.push({x:i*9+r2()*5,y:1+r2()*2.5,w:3+((r2()*3)|0)});
+  $("#gq").hidden=true;$("#gwin").hidden=true;hud();bar();
+}
+function solid(tx,ty){if(tx<0||tx>=COLS)return true;if(ty<0)return false;if(ty>=ROWS)return true;return !!SOLID[map[ty][tx]]}
+function moveX(dx){
+  p.x+=dx;
+  var x0=Math.floor(p.x-p.w/2),x1=Math.floor(p.x+p.w/2),y0=Math.floor(p.y),y1=Math.floor(p.y+p.h-.001),tx,ty;
+  for(ty=y0;ty<=y1;ty++)for(tx=x0;tx<=x1;tx++)if(solid(tx,ty)){if(dx>0)p.x=tx-p.w/2-.001;else if(dx<0)p.x=tx+1+p.w/2+.001;p.vx=0;return}
+}
+function moveY(dy){
+  p.y+=dy;p.on=false;
+  var x0=Math.floor(p.x-p.w/2+.001),x1=Math.floor(p.x+p.w/2-.001),y0=Math.floor(p.y),y1=Math.floor(p.y+p.h),tx,ty;
+  for(ty=y0;ty<=y1;ty++)for(tx=x0;tx<=x1;tx++)if(solid(tx,ty)){if(dy>0){p.y=ty-p.h-.001;p.on=true}else if(dy<0){p.y=ty+1+.001}p.vy=0;return}
+}
+function sfx(t){if(window.AU&&AU.sfx)AU.sfx(t)}
+function update(dt){
+  if(modal)return;
+  var ax=(KEYS.right?1:0)-(KEYS.left?1:0);
+  p.vx=ax*5.2;if(ax)p.face=ax;
+  if(KEYS.jump&&p.on){p.vy=-13.6;p.on=false;sfx("jump")}
+  p.vy=Math.min(p.vy+32*dt,22);
+  moveX(p.vx*dt);moveY(p.vy*dt);
+  p.anim+=Math.abs(p.vx)*dt*1.8;
+  if(p.y>ROWS+3){p.x=3.5;p.y=hgt[3]-1.85;p.vy=0}
+  if(now-lastClose<1200)return;
+  for(var i=0;i<qbs.length;i++){
+    var b=qbs[i];if(b.st===1)continue;
+    if(p.x+p.w/2>b.c+.08&&p.x-p.w/2<b.c+.92&&p.y<b.r+.92&&p.y+p.h>b.r+.08){openQ(b);break}
+  }
+}
+function openQ(b){
+  modal=b;KEYS.left=KEYS.right=KEYS.jump=0;
+  var q=GQ[b.q],o=$("#gqOpts");
+  $("#gqNum").textContent="Сұрақ блогы "+(b.q+1)+" / "+GQ.length;
+  $("#gqText").textContent=q.q;$("#gqFb").textContent="";$("#gqNext").hidden=true;
+  o.innerHTML=q.o.map(function(t,i){return '<button type="button" class="opt" data-i="'+i+'">'+t+'</button>'}).join("");
+  $("#gq").hidden=false;sfx("block");
+}
+function answer(i){
+  var b=modal,q=GQ[b.q],ok=i===q.c;attempts++;
+  [].forEach.call(document.querySelectorAll("#gqOpts .opt"),function(x){x.disabled=true;if(+x.dataset.i===q.c)x.classList.add("ok")});
+  if(ok){b.st=1;collected++;inv[4]++;sfx("ok");$("#gqFb").textContent="Дұрыс! "+q.e+" Тарих блогы қоржынға түсті."}
+  else{b.st=2;sfx("no");document.querySelector('#gqOpts .opt[data-i="'+i+'"]').classList.add("no");$("#gqFb").textContent="Дұрыс емес. "+q.e+" Блокқа қайта жетіп көр."}
+  $("#gqNext").hidden=false;hud();bar();
+}
+function closeQ(){
+  $("#gq").hidden=true;modal=null;lastClose=now;
+  if(collected>=GQ.length)win();
+}
+function win(){
+  $("#gwinTxt").textContent="Барлық "+GQ.length+" тарих блогы жиналды. Жауап беру әрекеттері: "+attempts+".";
+  $("#gwin").hidden=false;sfx("ok");
+}
+function hud(){$("#gProg").textContent="Тарих блоктары: "+collected+" / "+GQ.length;$("#gMode").textContent=mode==="dig"?"Режим: қазу":"Режим: салу";$("#gModeBtn").textContent=mode==="dig"?"Салу режиміне өту":"Қазу режиміне өту"}
+function bar(){
+  var h=$("#hotbar");
+  h.innerHTML=SLOTS.map(function(s,i){
+    var t=s===GOLD?T[GOLD]:T[s];
+    return '<button type="button" class="slot" data-i="'+i+'" aria-pressed="'+(i===sel)+'" title="'+(i+1)+': '+SNAME[i]+'"><img alt="'+SNAME[i]+'" src="'+t.toDataURL()+'"><b>'+inv[i]+'</b></button>';
+  }).join("");
+}
+function resize(){
+  var w=cv.clientWidth||600,d=Math.min(window.devicePixelRatio||1,2),h=Math.round(Math.max(280,Math.min(460,w*.56)));
+  if(w!==W||h!==H||d!==DPR){W=w;H=h;DPR=d;TS=H/VIS;cv.style.height=H+"px";cv.width=Math.round(W*d);cv.height=Math.round(H*d);ctx.setTransform(d,0,0,d,0,0)}
+}
+function img(t,x,y,s){ctx.drawImage(t,Math.round(x),Math.round(y),Math.ceil(s),Math.ceil(s))}
+function draw(t){
+  ctx.imageSmoothingEnabled=false;
+  var g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,"#6bb6e6");g.addColorStop(1,"#d6eef8");ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle="#fff1a0";ctx.fillRect(W*.78,H*.07,TS*2,TS*2);ctx.fillStyle="#fffbe0";ctx.fillRect(W*.78+TS*.3,H*.07+TS*.3,TS*1.4,TS*1.4);
+  camX=Math.max(0,Math.min(COLS*TS-W,p.x*TS-W/2));
+  ctx.fillStyle="rgba(255,255,255,.9)";
+  clouds.forEach(function(c){var cx=((c.x*TS-camX*.3)%(COLS*TS*.4)+COLS*TS*.4)%(COLS*TS*.4)-TS*4;ctx.fillRect(cx,c.y*TS,c.w*TS,TS*.7);ctx.fillRect(cx+TS*.6,c.y*TS-TS*.5,(c.w-1.2)*TS,TS*.5)});
+  var mi,mx;ctx.fillStyle="#8db5a4";
+  for(mi=0;mi<COLS*2;mi++){mx=mi*TS-camX*.5;if(mx<-TS||mx>W)continue;var mh=2+Math.round(Math.sin(mi*.31)*1.5+Math.sin(mi*.11)*2);ctx.fillRect(mx,(ROWS-VIS+0)*0+H-TS*(4.3+mh),TS+1,TS*(4.3+mh))}
+  ctx.fillStyle="#7aa592";
+  for(mi=0;mi<COLS*2;mi++){mx=mi*TS-camX*.75;if(mx<-TS||mx>W)continue;var mh2=1+Math.round(Math.sin(mi*.5+2)*1+Math.sin(mi*.2)*1.5);ctx.fillRect(mx,H-TS*(3.2+mh2),TS+1,TS*(3.2+mh2))}
+  var oy=-(ROWS-VIS)*TS,c0=Math.floor(camX/TS),c1=Math.min(COLS-1,c0+Math.ceil(W/TS)+1),x,y;
+  deco.forEach(function(d){
+    if(d.x<c0-3||d.x>c1+3)return;var sx=d.x*TS-camX,gy=hgt[d.x]*TS+oy;
+    if(d.t==="tree"){
+      for(var k=1;k<=d.h;k++)img(T.log,sx,gy-k*TS,TS);
+      for(var lx=-1;lx<=1;lx++)for(var ly=0;ly<2;ly++)img(T.leaf,sx+lx*TS,gy-(d.h+1+ly)*TS,TS);
+      img(T.leaf,sx,gy-(d.h+3)*TS,TS);
+    }else{ctx.fillStyle="#3f8f3a";ctx.fillRect(sx+TS*.47,gy-TS*.4,TS*.06,TS*.4);ctx.fillStyle=d.c;ctx.fillRect(sx+TS*.35,gy-TS*.6,TS*.3,TS*.22)}
+  });
+  for(y=ROWS-VIS;y<ROWS;y++)for(x=c0;x<=c1;x++){var tt=map[y][x];if(tt)img(T[tt],x*TS-camX,y*TS+oy,TS)}
+  qbs.forEach(function(b){
+    var bob=b.st===1?0:Math.sin(t*.003+b.c)*TS*.06;
+    img(b.st===1?T.ok:b.st===2?T.bad:T.q,b.c*TS-camX,b.r*TS+oy+bob,TS);
+  });
+  sprite(p.x*TS-camX,p.y*TS+oy);
+}
+function sprite(cx,top){
+  var u=TS/16,sw=Math.sin(p.anim*3)*(p.on?1:.3),f=p.face;
+  ctx.save();ctx.translate(Math.round(cx),Math.round(top));ctx.scale(f,1);
+  function r(col,x,y,w,h){ctx.fillStyle=col;ctx.fillRect(Math.round(x*u),Math.round(y*u),Math.ceil(w*u),Math.ceil(h*u))}
+  r("#3a2418",-4+sw*2.2,19,3.8,9);r("#3a2418",.2-sw*2.2,19,3.8,9);
+  r("#1f6f94",-4.5,10,9,10);r("#e6b23c",-4.5,15,9,1.6);r("#16587a",-4.5,10,2,10);
+  r("#1f6f94",-6.6+sw*1.5,10.5,2.6,8);r("#c08a5e",-6.6+sw*1.5,18,2.6,2);
+  r("#c08a5e",-3.6,2.5,7.2,7.6);r("#2a1a10",.8,5,1.4,1.4);r("#8a5a3a",2.6,7.2,1.6,.8);
+  r("#1b1b22",-4.6,.8,9.2,2.6);r("#1b1b22",-3.2,-2.4,6.4,3.4);r("#e6b23c",-4.6,2.6,9.2,.7);
+  ctx.restore();
+}
+var last=0;
+function loop(ts){
+  requestAnimationFrame(loop);
+  if(panel.hidden){last=0;return}
+  if(!last)last=ts;
+  var dt=Math.min(.033,(ts-last)/1000);last=ts;now=ts;
+  resize();update(dt);draw(ts);
+}
+/* input */
+var KM={ArrowLeft:"left",a:"left",A:"left",ArrowRight:"right",d:"right",D:"right",ArrowUp:"jump",w:"jump",W:"jump"," ":"jump"};
+window.addEventListener("keydown",function(e){
+  if(panel.hidden||modal)return;
+  var k=KM[e.key];
+  if(k){KEYS[k]=1;e.preventDefault();return}
+  if(e.key==="e"||e.key==="E"){setMode(mode==="dig"?"place":"dig")}
+  if(e.key>="1"&&e.key<="5"){sel=+e.key-1;bar()}
+});
+window.addEventListener("keyup",function(e){var k=KM[e.key];if(k)KEYS[k]=0});
+[].forEach.call(document.querySelectorAll("[data-k]"),function(b){
+  var k=b.dataset.k;
+  function on(e){e.preventDefault();if(!modal)KEYS[k]=1}
+  function off(){KEYS[k]=0}
+  b.addEventListener("pointerdown",on);b.addEventListener("pointerup",off);b.addEventListener("pointerleave",off);b.addEventListener("pointercancel",off);
+});
+function setMode(m){mode=m;hud()}
+$("#gModeBtn").addEventListener("click",function(){setMode(mode==="dig"?"place":"dig")});
+$("#hotbar").addEventListener("click",function(e){var b=e.target.closest(".slot");if(b){sel=+b.dataset.i;bar()}});
+$("#gqOpts").addEventListener("click",function(e){var b=e.target.closest(".opt");if(b&&!b.disabled)answer(+b.dataset.i)});
+$("#gqNext").addEventListener("click",closeQ);
+$("#gReset").addEventListener("click",newGame);
+$("#gwinAgain").addEventListener("click",newGame);
+cv.addEventListener("contextmenu",function(e){e.preventDefault()});
+cv.addEventListener("pointerdown",function(e){
+  if(modal)return;
+  var r=cv.getBoundingClientRect(),mx=(e.clientX-r.left)*(W/r.width),my=(e.clientY-r.top)*(H/r.height);
+  var tx=Math.floor((mx+camX)/TS),ty=Math.floor(my/TS)+(ROWS-VIS);
+  if(tx<0||tx>=COLS||ty<0||ty>=ROWS)return;
+  var dx=tx+.5-p.x,dy=ty+.5-(p.y+p.h/2);if(dx*dx+dy*dy>30)return;
+  var place=mode==="place"||e.button===2;
+  if(!place){
+    var t=map[ty][tx];
+    if(SOLID[t]&&ty<ROWS-1){map[ty][tx]=0;var si=SLOTS.indexOf(t);if(si>=0)inv[si]++;sfx("dig");bar()}
+  }else{
+    if(map[ty][tx]||inv[sel]<1)return;
+    if(p.x+p.w/2>tx&&p.x-p.w/2<tx+1&&p.y+p.h>ty&&p.y<ty+1)return;
+    for(var i=0;i<qbs.length;i++)if(qbs[i].c===tx&&qbs[i].r===ty)return;
+    map[ty][tx]=SLOTS[sel];inv[sel]--;sfx("place");bar();
+  }
+});
+newGame();requestAnimationFrame(loop);
+})();
+</script>
+<script>
+(function(){
+function $(s,r){return (r||document).querySelector(s)}
+var panel=$("#p-anim"),cv=$("#acv"),ctx=cv.getContext("2d");
+var LW=960,LH=540,GY=412,W=0,DPR=1;
+var SC=[
+ {d:8,t:"Отарлық қысым",x:"1853 жыл. Ақмешітті алу жорығына шамамен 8 мың түйе қажет болды.",s:"Wikipedia (б.ж.)",g:0},
+ {d:9,t:"Жасақ жиналады",x:"1847 жыл. Есет Көтібарұлы батырларын жинап, отарлық басқаруға қарсы көтерілісті бастады.",s:"Wikipedia (б.ж.); Құрманалин (2019)",g:1},
+ {d:11,t:"18 шілде 1847",x:"Есет 200 казактан құралған жазалау отрядына шабуыл жасады.",s:"Лекция 8 (б.ж.)",g:1},
+ {d:9,t:"Арал өңіріндегі наразылық",x:"1854–1858 жылдары Арал маңындағы қазақтар жоғары салыққа қарсы көтерілді.",s:"Wikipedia (б.ж.)",g:1},
+ {d:9,t:"Қазалы фортын қоршау",x:"1856 жылдың желтоқсанында Жанқожа Нұрмұхамедұлы басқарған күштер Қазалы фортын қоршады.",s:"itest.kz (б.ж.)",g:1},
+ {d:9,t:"Шошқакөл, 1858",x:"1858 жылы қыркүйекте Есет қуғынға ұшырап, Шошқакөл жерінде қаруын тастады.",s:"itest.kz (б.ж.); Лекция 8 (б.ж.)",g:0},
+ {d:7,t:"Бүгінгі жады",x:"Ақтөбеде «Есет Көтібарұлы ат үстінде» ескерткіші тұр.",s:"Ақтөбе облысы әкімдігі (б.ж.)",g:0}
+];
+var TOTAL=0,STARTS=[];SC.forEach(function(s){STARTS.push(TOTAL);TOTAL+=s.d});
+var T=0,playing=true,last=0,cur=-1,galNow=false,P=[];
+var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;if(reduce)playing=false;
+function lerp(a,b,t){return a+(b-a)*t}
+function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
+function ease(t){t=clamp(t,0,1);return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
+function ln(a,b,c,d){ctx.beginPath();ctx.moveTo(a,b);ctx.lineTo(c,d);ctx.stroke()}
+function rnd(a,b){return a+Math.random()*(b-a)}
+/* ---------- backdrop ---------- */
+function sky(a,b){var g=ctx.createLinearGradient(0,0,0,GY);g.addColorStop(0,a);g.addColorStop(1,b);ctx.fillStyle=g;ctx.fillRect(0,0,LW,LH)}
+function sun(x,y,r,col,glow){var g=ctx.createRadialGradient(x,y,r*.3,x,y,r*5);g.addColorStop(0,glow||"rgba(255,220,150,.8)");g.addColorStop(1,"rgba(255,200,120,0)");ctx.fillStyle=g;ctx.fillRect(0,0,LW,LH);ctx.fillStyle=col;ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fill()}
+function ridge(base,amp,f,ph,col,sc){ctx.fillStyle=col;ctx.beginPath();ctx.moveTo(0,LH);for(var x=0;x<=LW;x+=6)ctx.lineTo(x,base-amp*(Math.sin((x+sc)*f+ph)*.6+Math.sin((x+sc)*f*2.3+ph*2)*.4));ctx.lineTo(LW,LH);ctx.closePath();ctx.fill()}
+function ground(c1,c2){var g=ctx.createLinearGradient(0,GY-30,0,LH);g.addColorStop(0,c1);g.addColorStop(1,c2);ctx.fillStyle=g;ctx.fillRect(0,GY-8,LW,LH-GY+8)}
+var BL=[];for(var bi=0;bi<170;bi++)BL.push({x:Math.random(),y:Math.random(),h:6+Math.random()*12,p:Math.random()*6.3});
+function grass(sc,col){ctx.strokeStyle=col;ctx.lineWidth=1.4;ctx.lineCap="round";BL.forEach(function(b){var x=(((b.x*LW-sc*(.4+b.y))%LW)+LW)%LW,y=GY+8+b.y*(LH-GY-10),s=Math.sin(T*2+b.p+x*.02)*3;ctx.beginPath();ctx.moveTo(x,y);ctx.quadraticCurveTo(x+s*.4,y-b.h*.5,x+s,y-b.h);ctx.stroke()})}
+function cloud(x,y,s,a){ctx.fillStyle="rgba(255,255,255,"+a+")";[[0,0,34],[30,-10,28],[58,0,32],[28,8,30]].forEach(function(c){ctx.beginPath();ctx.arc(x+c[0]*s,y+c[1]*s,c[2]*s,0,7);ctx.fill()})}
+function shadow(x,y,rx){ctx.fillStyle="rgba(0,0,0,.22)";ctx.beginPath();ctx.ellipse(x,y,rx,rx*.16,0,0,7);ctx.fill()}
+/* ---------- particles ---------- */
+function emit(x,y,vx,vy,r,col,life){P.push({x:x,y:y,vx:vx,vy:vy,r:r,c:col,l:life,L:life})}
+function stepP(dt){for(var i=P.length-1;i>=0;i--){var q=P[i];q.x+=q.vx*dt;q.y+=q.vy*dt;q.r+=dt*14;q.l-=dt;if(q.l<=0)P.splice(i,1)}if(P.length>700)P.splice(0,P.length-700)}
+function drawP(){P.forEach(function(q){ctx.fillStyle="rgba("+q.c+","+(q.l/q.L*.4)+")";ctx.beginPath();ctx.arc(q.x,q.y,q.r,0,7);ctx.fill()})}
+/* ---------- characters ---------- */
+var PAL={bay:{b:"#9a6238",d:"#5d3a20",m:"#24160e",bl:"#b8352b"},black:{b:"#3b3b46",d:"#1c1c24",m:"#0e0e12",bl:"#2f6f9a"},grey:{b:"#c4bfb4",d:"#85807a",m:"#4a4640",bl:"#c9892b"},chest:{b:"#b5703a",d:"#74441f",m:"#3a2212",bl:"#2f8a6a"},bronze:{b:"#a07c45",d:"#5a431f",m:"#3d2c12",bl:"#7a5a2c"}};
+function legc(hx,hy,p,front,col){
+  var lift=Math.max(0,Math.cos(p)),fx=hx+Math.sin(p)*13,fy=hy+21-lift*10,kx=(hx+fx)/2+(front?6:-6)*(1+lift*.4),ky=(hy+fy)/2-2;
+  ctx.strokeStyle=col;ctx.lineWidth=5.4;ln(hx,hy,kx,ky);ctx.lineWidth=3.4;ln(kx,ky,fx,fy);
+  ctx.fillStyle="#1b1410";ctx.beginPath();ctx.ellipse(fx+1,fy,3.2,2.1,0,0,7);ctx.fill();
+}
+function person(rd,time,ph){
+  ctx.lineCap="round";
+  ctx.strokeStyle=rd.pants||"#2c3550";ctx.lineWidth=6.6;ln(-2,-14,9,-6);
+  ctx.strokeStyle="#2b1a10";ctx.lineWidth=5;ln(9,-6,3,6+Math.sin(ph));
+  ctx.save();ctx.translate(-2,-15);ctx.rotate(.12);
+  var w=Math.sin(time*6+ph)*2.6;
+  ctx.fillStyle=rd.coat;
+  ctx.beginPath();ctx.moveTo(-6.5,0);ctx.lineTo(-19+w,7);ctx.lineTo(-15+w,13.5);ctx.lineTo(1,6.5);ctx.closePath();ctx.fill();
+  ctx.beginPath();ctx.moveTo(-6.5,0);ctx.lineTo(6.5,0);ctx.lineTo(7.5,-12);ctx.lineTo(5.5,-23);ctx.lineTo(-5.5,-23);ctx.lineTo(-7.5,-11);ctx.closePath();ctx.fill();
+  ctx.strokeStyle="rgba(0,0,0,.3)";ctx.lineWidth=1;ctx.stroke();
+  ctx.fillStyle=rd.belt||"#e6b23c";ctx.fillRect(-7,-8,14.5,2.6);
+  ctx.strokeStyle=rd.coat;ctx.lineWidth=5;ln(1,-20,9,-14);ln(9,-14,15,-19);
+  ctx.fillStyle=rd.skin;ctx.beginPath();ctx.arc(15.5,-19.5,2.4,0,7);ctx.fill();
+  ctx.fillRect(-1.5,-26,5,4);
+  ctx.beginPath();ctx.arc(1,-29,5.4,0,7);ctx.fill();
+  ctx.beginPath();ctx.arc(-3.8,-28.5,1.8,0,7);ctx.fill();
+  ctx.fillStyle="#1c1410";ctx.beginPath();ctx.arc(3.4,-29.6,.8,0,7);ctx.fill();
+  ctx.strokeStyle="#2b1a10";ctx.lineWidth=.9;ctx.beginPath();ctx.moveTo(2.5,-26.6);ctx.quadraticCurveTo(5,-26.4,6,-27.2);ctx.stroke();
+  ctx.fillStyle="#3b2a1c";ctx.beginPath();ctx.ellipse(1,-33,8.4,2.9,-.1,0,7);ctx.fill();
+  ctx.fillStyle="#1d1a18";ctx.beginPath();ctx.moveTo(-6,-33);ctx.quadraticCurveTo(-6,-45,1,-45);ctx.quadraticCurveTo(8,-45,8,-33);ctx.closePath();ctx.fill();
+  ctx.fillStyle="#3b2a1c";ctx.beginPath();ctx.ellipse(-6.5,-29,2.4,4.6,.2,0,7);ctx.fill();
+  ctx.restore();
+  if(rd.w==="spear"){
+    ctx.strokeStyle="#6a4a2a";ctx.lineWidth=2.3;ln(4,-4,46,-116);
+    ctx.fillStyle="#dfe6ea";ctx.beginPath();ctx.moveTo(44.4,-113);ctx.lineTo(46,-124);ctx.lineTo(48.2,-113);ctx.closePath();ctx.fill();
+    if(rd.ban){
+      var k,x,y,pts=[];
+      for(k=0;k<=10;k++){x=45.5-k*4.6;y=-111+Math.sin(time*9-k*.5)*3.2*(k/10)+k*.45;pts.push([x,y])}
+      ctx.fillStyle="#1aa6c2";ctx.strokeStyle="#e6b23c";ctx.lineWidth=1.2;
+      ctx.beginPath();ctx.moveTo(pts[0][0],pts[0][1]);pts.forEach(function(q){ctx.lineTo(q[0],q[1])});
+      var e=pts[10];ctx.lineTo(e[0]+10,e[1]+9);ctx.lineTo(e[0],e[1]+18);
+      for(k=10;k>=0;k--)ctx.lineTo(pts[k][0],pts[k][1]+18*(1-k*.04));
+      ctx.closePath();ctx.fill();ctx.stroke();
+      ctx.strokeStyle="#2a1a10";ctx.lineWidth=1.4;
+      for(k=0;k<5;k++)ln(45.5,-108,41+k*1.8+Math.sin(time*7+k)*1.5,-96+k);
+    }
+  }else if(rd.w==="sabre"){
+    ctx.strokeStyle="#e4ebee";ctx.lineWidth=2.6;ctx.beginPath();ctx.moveTo(16,-31);ctx.quadraticCurveTo(30,-50,40,-72);ctx.stroke();
+    ctx.strokeStyle="#b88a15";ctx.lineWidth=2.4;ln(13,-33,19,-29);
+  }
+}
+function mounted(x,y,s,ph,f,pal,rd,time){
+  ctx.save();ctx.translate(x,y+Math.sin(ph*2)*2.2*s);ctx.scale(s*f,s);ctx.lineCap="round";ctx.lineJoin="round";
+  shadow(0,24,42);
+  legc(-20,4,ph+2.6,false,pal.d);legc(18,3,ph+.6,true,pal.d);
+  ctx.strokeStyle=pal.m;ctx.lineWidth=5.5;ctx.beginPath();ctx.moveTo(-29,-9);ctx.quadraticCurveTo(-42,-11+Math.sin(ph)*5,-52,3+Math.sin(ph+1)*6);ctx.stroke();
+  ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(-29,-7);ctx.quadraticCurveTo(-44,-4+Math.sin(ph+.5)*5,-50,10+Math.sin(ph+1.4)*6);ctx.stroke();
+  var g=ctx.createLinearGradient(0,-20,0,12);g.addColorStop(0,pal.b);g.addColorStop(1,pal.d);
+  ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(-30,-6);
+  ctx.bezierCurveTo(-30,-16,-16,-17,-6,-14);ctx.bezierCurveTo(4,-12,12,-15,20,-16);ctx.bezierCurveTo(26,-20,30,-30,36,-34);
+  ctx.lineTo(40,-35);ctx.lineTo(42,-40);ctx.lineTo(45,-35);ctx.bezierCurveTo(50,-33,56,-27,57,-22);ctx.bezierCurveTo(57,-18,52,-18,49,-21);
+  ctx.bezierCurveTo(44,-24,40,-20,36,-14);ctx.bezierCurveTo(32,-8,28,2,22,6);ctx.bezierCurveTo(12,12,-8,12,-18,8);ctx.bezierCurveTo(-26,6,-30,2,-30,-6);
+  ctx.closePath();ctx.fill();ctx.strokeStyle="rgba(0,0,0,.28)";ctx.lineWidth=1.2;ctx.stroke();
+  ctx.fillStyle=pal.bl;ctx.beginPath();ctx.moveTo(-9,-15);ctx.lineTo(9,-14);ctx.lineTo(8,-4);ctx.lineTo(-8,-3);ctx.closePath();ctx.fill();
+  ctx.fillStyle="#12100e";ctx.beginPath();ctx.arc(48,-28,1.6,0,7);ctx.fill();
+  ctx.strokeStyle=pal.m;ctx.lineWidth=2.4;
+  for(var m=0;m<6;m++){var t=m/5,mx=lerp(20,36,t),my=lerp(-16,-34,t);ctx.beginPath();ctx.moveTo(mx,my);ctx.quadraticCurveTo(mx-4,my-4+Math.sin(ph+m)*1.5,mx-9,my+1+Math.sin(ph+m)*2.5);ctx.stroke()}
+  ctx.strokeStyle="#4a2e18";ctx.lineWidth=1.2;ln(44,-31,54,-21);ln(52,-22,16,-30);
+  legc(-14,5,ph+3.3,false,pal.b);legc(24,4,ph+1.2,true,pal.b);
+  if(rd)person(rd,time,ph);
+  ctx.restore();
+}
+function walker(x,y,s,ph,f,rd,time,sa){
+  ctx.save();ctx.translate(x,y);ctx.scale(s*f,s);ctx.lineCap="round";ctx.lineJoin="round";
+  shadow(0,1,22);
+  var sw=Math.sin(ph)*5;
+  ctx.strokeStyle="#2b1a10";ctx.lineWidth=6.5;ln(-3,-26,-3+sw,-3);ln(3,-26,3-sw,-3);
+  ctx.fillStyle=rd.coat;ctx.beginPath();ctx.moveTo(-9,-64);ctx.lineTo(9,-64);ctx.lineTo(12,-22);ctx.lineTo(-12,-22);ctx.closePath();ctx.fill();
+  ctx.strokeStyle="rgba(0,0,0,.28)";ctx.lineWidth=1.2;ctx.stroke();
+  ctx.fillStyle=rd.belt;ctx.fillRect(-10,-43,20,3.2);
+  ctx.strokeStyle=rd.belt;ctx.lineWidth=1.6;ln(0,-64,0,-22);
+  ctx.strokeStyle=rd.coat;ctx.lineWidth=5.5;
+  if(sa>=0){ln(6,-58,13,-46);ln(13,-46,17,-43)}else{ln(6,-58,10,-44);ln(10,-44,12,-34)}
+  ctx.fillStyle=rd.skin;ctx.beginPath();ctx.arc(sa>=0?17.5:12.3,sa>=0?-43:-32.8,2.8,0,7);ctx.fill();
+  ctx.strokeStyle=rd.coat;ln(-6,-58,-9,-46);ln(-9,-46,-8,-35);
+  ctx.fillStyle=rd.skin;ctx.beginPath();ctx.arc(-8,-33.8,2.8,0,7);ctx.fill();
+  ctx.fillRect(-2,-69,5,5);ctx.beginPath();ctx.arc(.5,-73,6.4,0,7);ctx.fill();
+  ctx.fillStyle="#1c1410";ctx.beginPath();ctx.arc(3.8,-73.5,.9,0,7);ctx.fill();
+  ctx.strokeStyle="#2b1a10";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(2.6,-70);ctx.quadraticCurveTo(5.5,-69.6,6.6,-70.6);ctx.stroke();
+  ctx.fillStyle="#3b2a1c";ctx.beginPath();ctx.ellipse(.5,-77,9.6,3.2,-.1,0,7);ctx.fill();
+  ctx.fillStyle="#1d1a18";ctx.beginPath();ctx.moveTo(-7.5,-77);ctx.quadraticCurveTo(-7.5,-91,.5,-91);ctx.quadraticCurveTo(8.5,-91,8.5,-77);ctx.closePath();ctx.fill();
+  if(sa>=0){
+    var hx=17,hy=-43;ctx.strokeStyle="#6a4a2a";ctx.lineWidth=2.6;
+    ln(hx-Math.sin(sa)*46,hy+Math.cos(sa)*46,hx+Math.sin(sa)*68,hy-Math.cos(sa)*68);
+    ctx.fillStyle="#dfe6ea";var tx=hx+Math.sin(sa)*68,ty=hy-Math.cos(sa)*68;ctx.beginPath();ctx.arc(tx,ty,2.6,0,7);ctx.fill();
+  }
+  ctx.restore();
+}
+function soldier(x,y,s,ph,f,o){
+  ctx.save();ctx.translate(x,y);ctx.scale(s*f,s);ctx.lineCap="round";ctx.lineJoin="round";
+  shadow(0,1,20);
+  var sw=Math.sin(ph)*5,coat=o?"#2b3d66":"#4a7a52",dk=o?"#1d2a48":"#2e5136";
+  ctx.strokeStyle="#2c3550";ctx.lineWidth=7;ln(-3,-26,-3+sw,-6);ln(3,-26,3-sw,-6);
+  ctx.strokeStyle="#161316";ctx.lineWidth=8;ln(-3+sw,-6,-1+sw,-1);ln(3-sw,-6,5-sw,-1);
+  ctx.fillStyle=coat;ctx.beginPath();ctx.moveTo(-9,-27);ctx.lineTo(9,-27);ctx.lineTo(8,-53);ctx.lineTo(-8,-53);ctx.closePath();ctx.fill();
+  ctx.strokeStyle=dk;ctx.lineWidth=1.2;ctx.stroke();
+  if(!o){ctx.strokeStyle="#ece8dc";ctx.lineWidth=2;ln(-8,-51,7,-31);ln(8,-51,-7,-31)}
+  ctx.fillStyle="#d8b24a";ctx.fillRect(-1.5,-37,3,3);
+  if(o){ctx.fillStyle="#e6b23c";ctx.fillRect(-10,-54,5,3);ctx.fillRect(5,-54,5,3)}
+  ctx.strokeStyle=coat;ctx.lineWidth=5;
+  if(o){ln(7,-50,16,-44);ln(16,-44,22,-47);ln(-7,-50,-10,-40)}
+  else{ln(-7,-50,-9,-38);ln(7,-50,13,-42);ln(13,-42,10,-36)}
+  ctx.fillStyle="#d9ae88";ctx.beginPath();ctx.arc(o?22.5:10,o?-47:-36,2.6,0,7);ctx.fill();
+  if(!o){ctx.strokeStyle="#6a4a2a";ctx.lineWidth=3;ln(7,-30,26,-92);ctx.strokeStyle="#dfe6ea";ctx.lineWidth=1.8;ln(26,-92,29,-103)}
+  ctx.fillStyle="#d9ae88";ctx.fillRect(-2,-57,4,4);ctx.beginPath();ctx.arc(0,-60,6,0,7);ctx.fill();
+  ctx.fillStyle="#1c1410";ctx.beginPath();ctx.arc(2.6,-60.4,.9,0,7);ctx.fill();
+  ctx.strokeStyle="#5b3d20";ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(1.4,-57.4);ctx.quadraticCurveTo(4.4,-57,5.8,-58.2);ctx.stroke();
+  ctx.fillStyle=o?"#1d2a48":"#2e5136";ctx.beginPath();ctx.moveTo(-6.5,-62);ctx.quadraticCurveTo(-6.5,-72,0,-72);ctx.quadraticCurveTo(6.5,-72,6.5,-62);ctx.closePath();ctx.fill();
+  ctx.fillStyle="#141414";ctx.fillRect(-6.5,-63,15,2.4);
+  ctx.fillStyle="#b8352b";ctx.fillRect(-6.5,-65,13,1.6);
+  if(o){ctx.strokeStyle="#e6b23c";ctx.lineWidth=2;ln(0,-72,-2,-80)}
+  ctx.restore();
+}
+function camel(x,y,s,ph,f){
+  ctx.save();ctx.translate(x,y);ctx.scale(s*f,s);ctx.lineCap="round";ctx.lineJoin="round";
+  shadow(0,1,52);
+  var a=Math.sin(ph)*7,tan="#b98e5a",dk="#8c6a3e";
+  ctx.strokeStyle=dk;ctx.lineWidth=7;ln(-22,-38,-22+a,-3);ln(24,-38,24-a,-3);
+  ctx.strokeStyle=tan;ln(-12,-38,-12-a,-3);ln(34,-38,34+a,-3);
+  ctx.fillStyle="#2a1c10";[[-22+a,-2],[24-a,-2],[-12-a,-2],[34+a,-2]].forEach(function(q){ctx.beginPath();ctx.ellipse(q[0]+1,q[1],5,2.6,0,0,7);ctx.fill()});
+  ctx.fillStyle=tan;ctx.beginPath();ctx.ellipse(6,-50,44,17,0,0,7);ctx.fill();
+  ctx.beginPath();ctx.moveTo(40,-56);ctx.bezierCurveTo(58,-62,58,-94,62,-104);ctx.lineTo(74,-100);ctx.bezierCurveTo(70,-90,70,-62,52,-44);ctx.closePath();ctx.fill();
+  ctx.beginPath();ctx.ellipse(72,-102,13,6.5,.25,0,7);ctx.fill();
+  ctx.fillStyle="#12100e";ctx.beginPath();ctx.arc(72,-105,1.6,0,7);ctx.fill();
+  ctx.fillStyle=dk;ctx.beginPath();ctx.ellipse(-10,-70,10,14,0,0,7);ctx.fill();ctx.beginPath();ctx.ellipse(16,-72,10,14,0,0,7);ctx.fill();
+  ctx.fillStyle="#7a5a32";ctx.fillRect(-14,-82,34,18);ctx.strokeStyle="#4a3418";ctx.lineWidth=1.4;ctx.strokeRect(-14,-82,34,18);ln(-14,-73,20,-73);
+  ctx.fillStyle="#a2784a";ctx.fillRect(-18,-60,12,16);ctx.fillRect(14,-60,12,16);
+  ctx.strokeStyle=dk;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(-36,-54);ctx.quadraticCurveTo(-46,-48,-44,-36);ctx.stroke();
+  ctx.restore();
+}
+function yurt(x,y,s,time){
+  ctx.save();ctx.translate(x,y);ctx.scale(s,s);
+  shadow(0,2,78);
+  ctx.fillStyle="#efe7d4";ctx.fillRect(-62,-44,124,44);
+  ctx.strokeStyle="rgba(120,100,70,.45)";ctx.lineWidth=1;
+  for(var i=-62;i<62;i+=12){ln(i,-44,i+12,0);ln(i+12,-44,i,0)}
+  ctx.fillStyle="#f7f1e3";ctx.beginPath();ctx.moveTo(-64,-44);ctx.bezierCurveTo(-60,-84,-26,-100,0,-100);ctx.bezierCurveTo(26,-100,60,-84,64,-44);ctx.closePath();ctx.fill();
+  ctx.strokeStyle="rgba(120,100,70,.55)";ctx.lineWidth=1.2;ctx.stroke();
+  ctx.fillStyle="#2a6f9a";ctx.fillRect(-64,-52,128,9);
+  ctx.fillStyle="#e6b23c";for(i=-60;i<60;i+=12){ctx.beginPath();ctx.moveTo(i,-47.5);ctx.lineTo(i+4,-52);ctx.lineTo(i+8,-47.5);ctx.lineTo(i+4,-43);ctx.closePath();ctx.fill()}
+  ctx.fillStyle="#7a2f22";ctx.fillRect(-11,-34,22,34);ctx.fillStyle="#2a1a10";ctx.fillRect(-8,-31,16,31);
+  ctx.strokeStyle="#9a6a32";ctx.lineWidth=2;ctx.beginPath();ctx.arc(0,-101,9,Math.PI,0);ctx.stroke();
+  ctx.restore();
+}
+function fort(x,y,s,pr,flagT,glow){
+  ctx.save();ctx.translate(x,y);ctx.scale(s,s);
+  var n=18,lw=14,ww=n*lw,h=74*pr,i;
+  shadow(0,2,ww*.62);
+  for(i=0;i<n;i++){
+    var lx=-ww/2+i*lw,lh=h*clamp(pr*1.5-i/n*.5,0,1);if(lh<1)continue;
+    var g=ctx.createLinearGradient(lx,0,lx+lw,0);g.addColorStop(0,"#8a6a3a");g.addColorStop(.5,"#b08a52");g.addColorStop(1,"#6e5230");
+    ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(lx,0);ctx.lineTo(lx,-lh);ctx.lineTo(lx+lw/2-.5,-lh-9);ctx.lineTo(lx+lw-1,-lh);ctx.lineTo(lx+lw-1,0);ctx.closePath();ctx.fill();
+    ctx.strokeStyle="rgba(0,0,0,.3)";ctx.lineWidth=1;ctx.stroke();
+  }
+  if(pr>.55){
+    var a=clamp((pr-.55)/.45,0,1);ctx.globalAlpha=a;
+    [-ww/2-12,ww/2-14].forEach(function(tx){
+      ctx.fillStyle="#7d5f36";ctx.fillRect(tx,-h-38,28,h+38);ctx.fillStyle="#5a4224";ctx.fillRect(tx+9,-h-24,10,14);
+      ctx.fillStyle="#9a3b2c";ctx.beginPath();ctx.moveTo(tx-5,-h-38);ctx.lineTo(tx+14,-h-62);ctx.lineTo(tx+33,-h-38);ctx.closePath();ctx.fill();
+    });
+    ctx.fillStyle="#241a10";ctx.beginPath();ctx.moveTo(-16,0);ctx.lineTo(-16,-34);ctx.quadraticCurveTo(0,-52,16,-34);ctx.lineTo(16,0);ctx.closePath();ctx.fill();
+    ctx.strokeStyle="#3a2a18";ctx.lineWidth=3;ln(0,-47,0,0);
+    var px=-ww/2+2,py=-h-62;ctx.strokeStyle="#4a3a28";ctx.lineWidth=2;ln(px+14,py+24,px+14,py-30);
+    ctx.fillStyle="#d9dde0";ctx.beginPath();ctx.moveTo(px+14,py-30);for(i=1;i<=8;i++)ctx.lineTo(px+14+i*4.5,py-30+Math.sin(flagT*5-i*.6)*2.2+i*.3);for(i=8;i>=0;i--)ctx.lineTo(px+14+i*4.5,py-14+Math.sin(flagT*5-i*.6)*2.2+i*.3);ctx.closePath();ctx.fill();
+    ctx.globalAlpha=1;
+  }
+  if(glow){
+    [-26,26].forEach(function(tx){var fl=.8+Math.sin(flagT*11+tx)*.2,g2=ctx.createRadialGradient(tx,-30,2,tx,-30,70*fl);g2.addColorStop(0,"rgba(255,190,90,.75)");g2.addColorStop(1,"rgba(255,160,60,0)");ctx.fillStyle=g2;ctx.fillRect(tx-80,-110,160,160);ctx.fillStyle="#ffcf6a";ctx.beginPath();ctx.ellipse(tx,-32,3.2,6*fl,0,0,7);ctx.fill();ctx.fillStyle="#4a3418";ctx.fillRect(tx-1.2,-28,2.4,16)});
+  }
+  ctx.restore();
+}
+var flagImg=(function(){
+  var c=document.createElement("canvas");c.width=240;c.height=120;var x=c.getContext("2d"),k;
+  x.fillStyle="#00afca";x.fillRect(0,0,240,120);x.fillStyle="#fec50c";
+  for(k=0;k<6;k++){var y0=k*20+10;x.beginPath();x.moveTo(4,y0-8);x.quadraticCurveTo(18,y0-8,18,y0);x.quadraticCurveTo(18,y0+8,4,y0+8);x.quadraticCurveTo(12,y0+4,12,y0);x.quadraticCurveTo(12,y0-4,4,y0-8);x.fill()}
+  var cx=134,cy=46;x.beginPath();x.arc(cx,cy,18,0,7);x.fill();
+  for(k=0;k<32;k++){var a=k/32*6.2832;x.beginPath();x.moveTo(cx+Math.cos(a-.06)*21,cy+Math.sin(a-.06)*21);x.lineTo(cx+Math.cos(a)*31,cy+Math.sin(a)*31);x.lineTo(cx+Math.cos(a+.06)*21,cy+Math.sin(a+.06)*21);x.fill()}
+  x.beginPath();x.ellipse(134,92,6,10,0,0,7);x.fill();
+  x.beginPath();x.moveTo(129,86);x.quadraticCurveTo(98,68,82,90);x.quadraticCurveTo(100,86,112,98);x.quadraticCurveTo(120,106,129,102);x.fill();
+  x.beginPath();x.moveTo(139,86);x.quadraticCurveTo(170,68,186,90);x.quadraticCurveTo(168,86,156,98);x.quadraticCurveTo(148,106,139,102);x.fill();
+  x.beginPath();x.arc(134,80,4.6,0,7);x.fill();x.beginPath();x.moveTo(129,102);x.lineTo(134,114);x.lineTo(139,102);x.fill();
+  return c;
+})();
+function flag(px,py,w,h,time){var S=36,sw=flagImg.width/S,i,d;for(i=0;i<S;i++){d=i/S*w;var yo=Math.sin(time*5+d*.07)*(d/w)*5;ctx.drawImage(flagImg,i*sw,0,sw+1,flagImg.height,px+d,py+yo,w/S+1.2,h)}}
+function bird(x,y,s,t){var w=Math.sin(t*9+x)*5*s;ctx.strokeStyle="rgba(40,50,60,.7)";ctx.lineWidth=1.6*s;ctx.lineCap="round";ctx.beginPath();ctx.moveTo(x-9*s,y-w);ctx.quadraticCurveTo(x-4*s,y-4*s,x,y);ctx.quadraticCurveTo(x+4*s,y-4*s,x+9*s,y-w);ctx.stroke()}
+/* ---------- scenes ---------- */
+function s0(l,g){
+  sky("#8cc8ea","#f6e3b8");sun(760,150,32,"#fff4c4");cloud(120+g*6%1000-60,90,1,.9);cloud(520+g*4%1000-60,60,.8,.8);
+  ridge(GY-44,22,.006,1,"#a4c0ae",g*6);ridge(GY-16,16,.009,3,"#86a98e",g*14);
+  ground("#a2bf6a","#668640");grass(g*26,"#6f9948");
+  fort(720,GY+6,1.2,ease(l*1.5),g,0);
+  soldier(590,GY+34,1,0,-1,false);soldier(630,GY+40,1,0,-1,true);
+  for(var i=0;i<4;i++){var cx=-260+((g*58+i*230)%1450);camel(cx,GY+66+(i%2)*14,1,g*5+i,1)}
+  if(Math.random()<.4)emit(720-120+rnd(0,240),GY-40,rnd(-6,6),-20,6,"120,110,100",2);
+}
+function s1(l,g){
+  sky("#6fb7e8","#f8e8c2");sun(240,170,34,"#fff1b8");cloud(500-g*5%1100+100,80,1,.9);cloud(100+g*4%1000,120,.7,.85);
+  ridge(GY-50,26,.005,2,"#9fbcb0",g*6);ridge(GY-18,16,.008,5,"#83a98a",g*12);
+  ground("#a8c46e","#678a42");grass(g*10,"#70994a");
+  yurt(150,GY-6,.8,g);yurt(820,GY-8,.75,g);
+  if(Math.random()<.3){emit(150,GY-90,rnd(-4,4),-24,7,"150,150,150",3);emit(820,GY-82,rnd(-4,4),-22,6,"150,150,150",3)}
+  var hl=ctx.createRadialGradient(480,GY+12,10,480,GY+12,230);hl.addColorStop(0,"#9ccf63");hl.addColorStop(1,"#7aa84e");
+  ctx.fillStyle=hl;ctx.beginPath();ctx.ellipse(480,GY+22,215,62,0,0,7);ctx.fill();
+  var pals=[PAL.bay,PAL.black,PAL.chest,PAL.bay,PAL.black,PAL.chest],j,rows=[];
+  for(j=0;j<12;j++){
+    var left=j<6,k=left?j:j-6,tx=left?330-k*50:630+k*50,sx=left?-160-k*80:1120+k*80,pr=clamp((l*1.35-.05*k)/.72,0,1),x=lerp(sx,tx,ease(pr));
+    rows.push({x:x,y:GY+46+(k%2)*22+(k>2?6:0),f:left?1:-1,ph:pr>0&&pr<1?g*15+j:Math.sin(g*2+j)*.25,pal:pals[k%6],w:k%2?"sabre":"spear",s:.92});
+  }
+  rows.sort(function(a,b){return a.y-b.y});
+  rows.forEach(function(r){
+    if(r.ph>1&&Math.random()<.5)emit(r.x-r.f*28,r.y+20,-r.f*30,-8,6,"200,170,120",1.1);
+    mounted(r.x,r.y,r.s,r.ph,r.f,r.pal,{coat:r.pal.bl,skin:"#c08a5e",w:r.w},g);
+  });
+  mounted(480,GY-30+Math.sin(g*2)*1.2,1.5,Math.sin(g*2)*.2,1,PAL.grey,{coat:"#1f6f94",belt:"#e6b23c",skin:"#c08a5e",w:"spear",ban:1},g);
+}
+function s2(l,g){
+  var shake=l>.62?Math.sin(g*50)*2.2*(l-.62)/.38:0;
+  sky("#6db3e6","#f7e5b8");sun(200,140,30,"#fff2c0");cloud(600+g*5%1100-100,80,1,.9);
+  ctx.save();ctx.translate(shake,0);
+  ridge(GY-46,24,.006,4,"#a3bfb2",g*5);ridge(GY-14,16,.009,2,"#84a98a",g*12);
+  ground("#a9c46f","#698942");grass(g*18,"#70994a");
+  var march=l<.45,i;
+  for(i=0;i<8;i++){var sx=120+i*52+(march?l*210:95);soldier(sx,GY+34+(i%2)*8,1.08,march?g*6+i:0,1,false)}
+  var rs=[];
+  for(i=0;i<9;i++){
+    var pr=clamp((l-.08-i*.012)/.78,0,1),x=lerp(1180+i*60,330+i*34,ease(pr)),run=pr>0&&pr<1;
+    rs.push({x:x,y:GY+62+(i%3)*22,ph:run?g*16+i:0,pal:[PAL.bay,PAL.black,PAL.chest][i%3],i:i,run:run});
+  }
+  rs.sort(function(a,b){return a.y-b.y});
+  rs.forEach(function(r){
+    if(r.run&&Math.random()<.7)emit(r.x+30,r.y+20,rnd(10,50),rnd(-12,-2),7,"205,175,125",1.4);
+    mounted(r.x,r.y,.95,r.ph,-1,r.pal,{coat:r.pal.bl,skin:"#c08a5e",w:r.i%3===1?"sabre":"spear",ban:r.i===0},g);
+  });
+  if(l>.5)for(i=0;i<4;i++)emit(rnd(330,640),GY+rnd(40,90),rnd(-18,18),rnd(-16,-4),rnd(12,22),"200,170,125",rnd(1.6,2.6));
+  ctx.restore();
+}
+function s3(l,g){
+  sky("#79bde8","#fae9c4");sun(770,160,30,"#fff2c0");cloud(200+g*5%1100,90,1,.9);
+  ridge(GY-48,24,.005,1,"#a6c2b2",g*6);ridge(GY-16,15,.009,6,"#85aa8c",g*12);
+  ground("#aac570","#6b8b44");grass(g*14,"#71994a");
+  yurt(190,GY-4,.9,g);yurt(430,GY-10,.8,g);yurt(670,GY-4,.9,g);
+  if(Math.random()<.3){[190,430,670].forEach(function(x){emit(x,GY-92,rnd(-4,4),-22,6,"150,150,150",3)})}
+  var cx=1100-((g*54)%1300);
+  camel(cx,GY+78,1.05,g*5,-1);soldier(cx+130,GY+66,1,g*6,-1,false);
+  var gs=[],j;
+  for(j=0;j<7;j++){
+    var from=[190,430,670][j%3],pr=clamp((l*1.3-j*.07)/.7,0,1),x=lerp(from+50,860-j*10,ease(pr)),run=pr>0&&pr<1;
+    gs.push({x:x,y:GY+52+(j%3)*20,ph:run?g*15+j:Math.sin(g*2+j)*.2,pal:[PAL.bay,PAL.black,PAL.chest,PAL.grey][j%4],j:j,run:run});
+  }
+  gs.sort(function(a,b){return a.y-b.y});
+  gs.forEach(function(r){
+    if(r.run&&Math.random()<.5)emit(r.x-28,r.y+20,-30,-8,6,"200,170,120",1.1);
+    mounted(r.x,r.y,.92,r.ph,1,r.pal,{coat:r.pal.bl,skin:"#c08a5e",w:"spear",ban:r.j===0&&l>.45},g);
+  });
+}
+function s4(l,g){
+  sky("#14233f","#6b7fa3");
+  var i;ctx.fillStyle="rgba(255,255,255,.8)";for(i=0;i<40;i++){ctx.fillRect((i*97)%LW,(i*53)%200,1.6,1.6)}
+  ctx.fillStyle="#f1f4d8";ctx.beginPath();ctx.arc(150,90,22,0,7);ctx.fill();
+  ridge(GY-40,20,.006,2,"#4a5c80",g*5);ridge(GY-12,14,.009,4,"#6c7fa2",g*10);
+  var gg=ctx.createLinearGradient(0,GY-20,0,LH);gg.addColorStop(0,"#dfe8f2");gg.addColorStop(1,"#a8b8cf");ctx.fillStyle=gg;ctx.fillRect(0,GY-8,LW,LH-GY+8);
+  var rs=[];
+  for(i=0;i<8;i++){var a=g*.55+i*Math.PI*2/8,sn=Math.sin(a);rs.push({x:480+Math.cos(a)*370,y:GY+70+sn*34,sc:.9+sn*.2,f:-sn>=0?1:-1,ph:g*14+i,back:sn<0,i:i,pal:[PAL.bay,PAL.black,PAL.chest,PAL.grey][i%4]})}
+  rs.filter(function(r){return r.back}).forEach(function(r){mounted(r.x,r.y,r.sc,r.ph,r.f,r.pal,{coat:r.pal.bl,skin:"#c08a5e",w:"spear",ban:r.i===0},g)});
+  fort(480,GY+22,1.35,1,g,1);
+  rs.filter(function(r){return!r.back}).forEach(function(r){
+    if(Math.random()<.3)emit(r.x-r.f*26,r.y+22,-r.f*20,-6,6,"235,240,250",1);
+    mounted(r.x,r.y,r.sc,r.ph,r.f,r.pal,{coat:r.pal.bl,skin:"#c08a5e",w:"spear",ban:r.i===0},g);
+  });
+  ctx.fillStyle="rgba(255,255,255,.85)";for(i=0;i<90;i++){var sx=((i*131+g*40)%LW),sy=((i*71+g*70)%LH);ctx.beginPath();ctx.arc(sx,sy,1.6+i%3*.5,0,7);ctx.fill()}
+}
+function s5(l,g){
+  sky("#38407a","#f4a259");sun(480,GY-30,70,"#ffd694","rgba(255,170,90,.7)");
+  ridge(GY-34,22,.006,3,"#7a5a78",g*3);ridge(GY-10,16,.01,1,"#8a6a62",g*6);
+  ground("#b79a58","#6e5a34");grass(g*6,"#8d7b44");
+  mounted(190,GY+56,1.15,Math.sin(g*2)*.15,1,PAL.grey,{coat:"#1f6f94",skin:"#c08a5e",w:"none"},g);
+  var wl=clamp(l/.3,0,1),wx=lerp(330,470,ease(wl)),walking=wl<1,sa=-1;
+  if(l<.62){sa=l<.38?0:lerp(0,1.5,ease((l-.38)/.2))}
+  var rd={coat:"#1f6f94",belt:"#e6b23c",skin:"#c08a5e"};
+  soldier(690,GY+60,1.35,0,-1,true);
+  [760,800,840].forEach(function(x,i){soldier(x,GY+56+i%2*10,1.1,0,-1,false)});
+  walker(wx,GY+60,1.35,walking?g*6:0,1,rd,g,sa);
+  if(l>=.62){
+    var fy=lerp(-43*1.35,-4,ease((l-.62)/.16));
+    ctx.save();ctx.translate(wx+18*1.35,GY+60+fy);ctx.strokeStyle="#6a4a2a";ctx.lineWidth=3;ctx.lineCap="round";ln(-62,0,92,-6);
+    ctx.fillStyle="#dfe6ea";ctx.beginPath();ctx.arc(92,-6,3,0,7);ctx.fill();ctx.restore();
+  }
+}
+function s6(l,g){
+  sky("#9ec6e6","#fbe6c0");sun(300,200,34,"#fff4c8");cloud(600-g*4%1100+100,90,1,.9);cloud(150+g*3%1000,130,.7,.8);
+  ridge(GY-48,24,.005,2,"#a9c4b6",g*3);ridge(GY-14,16,.009,5,"#88ad90",g*6);
+  ground("#a9c670","#6c8c45");grass(g*3,"#729a4b");
+  var px=480,py=GY+50;
+  var pg=ctx.createLinearGradient(px-90,0,px+90,0);pg.addColorStop(0,"#8b9094");pg.addColorStop(.5,"#b5babd");pg.addColorStop(1,"#7a7f84");
+  ctx.fillStyle=pg;ctx.fillRect(px-80,py-70,160,70);ctx.fillRect(px-62,py-120,124,52);ctx.strokeStyle="rgba(0,0,0,.2)";ctx.lineWidth=1.4;ctx.strokeRect(px-80,py-70,160,70);ctx.strokeRect(px-62,py-120,124,52);
+  ctx.fillStyle="#e6b23c";ctx.fillRect(px-26,py-100,52,10);
+  shadow(px,py+4,120);
+  mounted(px,py-168,1.35,.9,1,PAL.bronze,{coat:"#8a6a38",belt:"#c89a3c",skin:"#b88a52",pants:"#5a431f",w:"sabre"},g);
+  var sh=(g*.35)%1.6-.3;ctx.save();ctx.globalCompositeOperation="lighter";var gl=ctx.createLinearGradient(px-110+sh*260,0,px-70+sh*260,0);gl.addColorStop(0,"rgba(255,230,160,0)");gl.addColorStop(.5,"rgba(255,230,160,.22)");gl.addColorStop(1,"rgba(255,230,160,0)");ctx.fillStyle=gl;ctx.fillRect(px-110,py-330,260,330);ctx.restore();
+  ctx.strokeStyle="#5b5f63";ctx.lineWidth=3;ln(760,GY+70,760,GY-70);flag(762,GY-70,96,48,g);
+  [[250,GY+84,1,0],[300,GY+92,1.1,1],[670,GY+88,1,2],[720,GY+96,1.1,3]].forEach(function(c){walker(c[0],c[1],c[2]*.9,Math.sin(g*2+c[3])*.2,c[3]%2?1:-1,{coat:["#3d5a80","#7a4a2a","#2f6f5a","#8a3b3b"][c[3]],belt:"#d8b24a",skin:"#c9976c"},g,-1)});
+  for(var i=0;i<4;i++)bird(((g*60+i*190)%1200)-100,70+i*26+Math.sin(g+i)*8,1.1-i*.1,g);
+}
+var SF=[s0,s1,s2,s3,s4,s5,s6];
+/* ---------- engine ---------- */
+function resize(){
+  var w=cv.clientWidth||800,d=Math.min(window.devicePixelRatio||1,2);
+  if(w!==W||d!==DPR){W=w;DPR=d;var h=Math.round(w*LH/LW);cv.style.height=h+"px";cv.width=Math.round(w*d);cv.height=Math.round(h*d)}
+}
+function draw(){
+  var i=SC.length-1;while(i>0&&T<STARTS[i])i--;
+  var l=clamp((T-STARTS[i])/SC[i].d,0,1);
+  if(i!==cur){cur=i;P=[];caption(i)}
+  ctx.setTransform(cv.width/LW,0,0,cv.height/LH,0,0);
+  ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality="high";
+  SF[i](l,T);drawP();
+  var fade=Math.min(clamp(l/.04,0,1),clamp((1-l)/.04,0,1));
+  if(fade<1){ctx.fillStyle="rgba(8,14,22,"+(1-fade)+")";ctx.fillRect(0,0,LW,LH)}
+  var seek=$("#aSeek");if(document.activeElement!==seek)seek.value=Math.round(T/TOTAL*1000);
+  return i;
+}
+function caption(i){
+  $("#aTitle").textContent=SC[i].t;$("#aText").textContent=SC[i].x;$("#aSrc").textContent="Дереккөз: "+SC[i].s;
+  [].forEach.call(document.querySelectorAll("#aChap .fbtn"),function(b,k){b.setAttribute("aria-pressed",k===i?"true":"false")});
+}
+function loop(ts){
+  requestAnimationFrame(loop);
+  if(panel.hidden){last=0;if(galNow){galNow=false;if(window.AU)AU.gallopOn(false)}return}
+  if(!last)last=ts;
+  var dt=Math.min(.05,(ts-last)/1000);last=ts;
+  resize();
+  if(playing){T+=dt;if(T>=TOTAL)T=0;stepP(dt)}
+  var i=draw();
+  var want=playing&&SC[i].g===1;
+  if(want!==galNow){galNow=want;if(window.AU)AU.gallopOn(want)}
+}
+$("#aChap").innerHTML=SC.map(function(s,i){return '<button type="button" class="fbtn" data-i="'+i+'" aria-pressed="'+(i===0)+'">'+s.t+'</button>'}).join("");
+$("#aChap").addEventListener("click",function(e){var b=e.target.closest("[data-i]");if(!b)return;T=STARTS[+b.dataset.i]+.01;P=[];if(!playing)draw()});
+$("#aPlay").addEventListener("click",function(){playing=!playing;this.textContent=playing?"Тоқтату":"Ойнату";this.setAttribute("aria-pressed",playing?"true":"false")});
+$("#aSeek").addEventListener("input",function(){T=this.value/1000*TOTAL;P=[];if(!playing)draw()});
+$("#aPlay").textContent=playing?"Тоқтату":"Ойнату";
+requestAnimationFrame(loop);
+})();
+</script>
+
+</body></html>
